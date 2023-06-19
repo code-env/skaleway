@@ -8,6 +8,10 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {},
+      fontFamily: {
+        fontInter: "var(--font-inter)",
+        fontSans: "var(--font-sans)",
+      },
     },
   },
   plugins: [],
