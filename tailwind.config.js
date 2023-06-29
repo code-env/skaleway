@@ -12,6 +12,21 @@ module.exports = {
         fontInter: "var(--font-inter)",
         fontSans: "var(--font-sans)",
       },
+      backgroundColor: {
+        primary: "var(--color-orange)",
+        secondary: "var(--color-blue)",
+        neutral: "var(--color-neutral)",
+      },
+      textColor: {
+        primary: "var(--color-orange)",
+        secondary: "var(--color-blue)",
+        neutral: "var(--color-neutral)",
+      },
+      borderColor: {
+        primary: "var(--color-orange)",
+        secondary: "var(--color-blue)",
+        neutral: "var(--color-neutral)",
+      },
     },
   },
   plugins: [],
