@@ -12,6 +12,10 @@
   --color-neutral:#D9D9D9;
 }
 
+.respsonsive-px{
+  @apply lg:px-32 px-8
+}
+
 .bg-gradient {
   background: linear-gradient(252.91deg, #1e082d 1.42%, #07020b 101.68%);
 }
