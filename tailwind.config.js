@@ -9,8 +9,8 @@ module.exports = {
     extend: {
       backgroundImage: {},
       fontFamily: {
-        fontInter: "var(--font-inter)",
-        fontSans: "var(--font-sans)",
+        inter: "var(--font-inter)",
+        sans: "var(--font-sans)",
       },
       backgroundColor: {
         primary: "var(--color-orange)",
