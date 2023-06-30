@@ -5,7 +5,7 @@ import Trusties from "./components/Trusties";
 import Services from "./components/services/Services";
 import About from "./components/about/About";
 import Tools from "./components/Tools/Tools";
-import Analytics from "./components/Analytics";
+import Analytics from "./components/Analytics/Analytics";
 
 const LandingPage = () => {
   return (
