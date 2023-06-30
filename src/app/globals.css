@@ -12,10 +12,27 @@
   --color-neutral: #d9d9d9;
 }
 
-.respsonsive-px {
+.responsive-px {
   @apply lg:px-32 px-8;
 }
 
 .bg-gradient {
   background: linear-gradient(252.91deg, #1e082d 1.42%, #07020b 101.68%);
+}
+
+.service:nth-child(1),
+.service:nth-child(3) {
+  @apply bg-white text-secondary shadow-md h-[550px];
+}
+
+.service:nth-child(2) {
+  @apply bg-secondary text-white h-[600px];
+}
+.service:nth-child(1) button,
+.service:nth-child(3) button {
+  @apply bg-secondary text-white;
+}
+
+.service:nth-child(2) button {
+  @apply bg-white text-secondary;
 }
