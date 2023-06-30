@@ -3,6 +3,7 @@ import React from "react";
 import Hero from "./components/Hero";
 import Trusties from "./components/Trusties";
 import Services from "./components/services/Services";
+import About from "./components/about/About";
 
 const LandingPage = () => {
   return (
@@ -10,6 +11,7 @@ const LandingPage = () => {
       <Hero />
       <Trusties />
       <Services />
+      <About />
       <div></div>
     </div>
   );
