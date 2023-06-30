@@ -6,6 +6,7 @@ import Services from "./components/services/Services";
 import About from "./components/about/About";
 import Tools from "./components/Tools/Tools";
 import Analytics from "./components/Analytics/Analytics";
+import Contact from "./components/contact/Contact";
 
 const LandingPage = () => {
   return (
@@ -16,6 +17,7 @@ const LandingPage = () => {
       <About />
       <Tools />
       <Analytics />
+      <Contact />
       <div></div>
     </div>
   );

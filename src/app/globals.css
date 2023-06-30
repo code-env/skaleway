@@ -36,3 +36,12 @@
 .service:nth-child(2) button {
   @apply bg-white text-secondary;
 }
+
+.card:nth-child(1),
+.card:nth-child(3) {
+  @apply bg-white;
+}
+
+.card:nth-child(2) {
+  @apply bg-secondary;
+}

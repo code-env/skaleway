@@ -1,4 +1,7 @@
 import { useMemo } from "react";
+import { BiPhoneCall } from "react-icons/bi";
+import { CiMail } from "react-icons/ci";
+import { FaLocationDot } from "react-icons/fa6";
 
 export const useHeaderRoutes = () => {
   const routes = useMemo(
@@ -237,6 +240,28 @@ export const useDevTools = () => {
             height: 80,
           },
         ],
+      },
+    ],
+    []
+  );
+
+  return tools;
+};
+
+export const useContactCards = () => {
+  const tools = useMemo(
+    () => [
+      {
+        name: "Drop a Line",
+        icon: CiMail,
+      },
+      {
+        name: "24 / 7 Service",
+        icon: BiPhoneCall,
+      },
+      {
+        name: "Location",
+        icon: FaLocationDot,
       },
     ],
     []
