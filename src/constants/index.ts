@@ -146,3 +146,101 @@ export const useServices = () => {
 
   return services;
 };
+
+export const useDevTools = () => {
+  const tools = useMemo(
+    () => [
+      {
+        name: "Development",
+        elmts: [
+          {
+            name: "html",
+            icon: "/Images/tools/html.svg",
+            width: 80,
+            height: 80,
+          },
+          {
+            name: "css",
+            icon: "/Images/tools/css.svg",
+            width: 80,
+            height: 80,
+          },
+          {
+            name: "javascript",
+            icon: "/Images/tools/javascript.svg",
+            width: 80,
+            height: 80,
+          },
+          {
+            name: "typescript",
+            icon: "/Images/tools/typescript.svg",
+            width: 80,
+            height: 80,
+          },
+          {
+            name: "react",
+            icon: "/Images/tools/react.svg",
+            width: 80,
+            height: 80,
+          },
+          {
+            name: "nextjs",
+            icon: "/Images/tools/nextjs.svg",
+            width: 254,
+            height: 51,
+          },
+          {
+            name: "terminal",
+            icon: "/Images/tools/terminal.svg",
+            width: 80,
+            height: 80,
+          },
+          {
+            name: "vscode",
+            icon: "/Images/tools/vscode.svg",
+            width: 80,
+            height: 80,
+          },
+          {
+            name: "nodejs",
+            icon: "/Images/tools/nodejs.svg",
+            width: 80,
+            height: 80,
+          },
+        ],
+      },
+      {
+        name: "Design",
+        elmts: [
+          {
+            name: "figma",
+            icon: "/Images/tools/figma.svg",
+            width: 59,
+            height: 89,
+          },
+          {
+            name: "photoshop",
+            icon: "/Images/tools/photoshop.svg",
+            width: 80,
+            height: 80,
+          },
+          {
+            name: "indesign",
+            icon: "/Images/tools/indesign.svg",
+            width: 80,
+            height: 80,
+          },
+          {
+            name: "illustrator",
+            icon: "/Images/tools/illustrator.svg",
+            width: 80,
+            height: 80,
+          },
+        ],
+      },
+    ],
+    []
+  );
+
+  return tools;
+};
