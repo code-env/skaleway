@@ -282,3 +282,68 @@ export const useContactCards = () => {
 
   return tools;
 };
+
+export const useFooterRoutes = () => {
+  const routes = useMemo(
+    () => [
+      {
+        name: "Usesful Links",
+        links: [
+          {
+            name: "Home",
+            path: "home",
+          },
+          {
+            name: "About Us",
+            path: "about",
+          },
+          {
+            name: "Porfolio",
+            path: "portfolio",
+          },
+          {
+            name: "Services",
+            path: "services",
+          },
+          {
+            name: "Team",
+            path: "team",
+          },
+          {
+            name: "Contact Us",
+            path: "contact",
+          },
+        ],
+      },
+      {
+        name: "Services",
+        links: [
+          {
+            name: "Web Design and Development",
+          },
+          {
+            name: "UI/UX Designing",
+          },
+          {
+            name: "Graphic Designing",
+          },
+          {
+            name: "Visual Branding",
+          },
+          {
+            name: "Print Designing",
+          },
+          {
+            name: "Portfolio management",
+          },
+          {
+            name: "Magazine Design",
+          },
+        ],
+      },
+    ],
+    []
+  );
+
+  return routes;
+};

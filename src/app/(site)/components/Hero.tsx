@@ -5,7 +5,10 @@ import { AiFillStar } from "react-icons/ai";
 
 const Hero = () => {
   return (
-    <div className="bg-gradient h-screen relative responsive-px pt-40">
+    <div
+      className="bg-gradient h-screen relative responsive-px pt-40"
+      id="home"
+    >
       <div className="w-full text-white flex flex-col gap-5">
         <h1 className="font-sans font-bold lg:text-5xl text-xl lg:leading-[140%] min-[600px]:text-3xl">
           We Design and Develop the <br className="lg:block hidden" /> Digital
