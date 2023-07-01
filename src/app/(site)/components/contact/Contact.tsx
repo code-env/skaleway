@@ -1,5 +1,6 @@
 import React from "react";
 import Cards from "./Cards";
+import Messaging from "./Messaging";
 
 const Contact = () => {
   return (
@@ -8,7 +9,10 @@ const Contact = () => {
         <h1 className=" text-center gap-4 text-[32px] font-inter font-medium">
           Contact Us
         </h1>
-        <Cards />
+        <div className="flex flex-col gap-8">
+          <Cards />
+          <Messaging />
+        </div>
       </div>
     </div>
   );
