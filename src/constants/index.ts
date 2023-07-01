@@ -8,7 +8,11 @@ export const useHeaderRoutes = () => {
     () => [
       {
         name: "Home",
-        path: "#",
+        path: "",
+      },
+      {
+        name: "About Us",
+        path: "about",
       },
       {
         name: "Porfolio",
@@ -21,6 +25,10 @@ export const useHeaderRoutes = () => {
       {
         name: "Team",
         path: "team",
+      },
+      {
+        name: "Contact Us",
+        path: "contact",
       },
     ],
     []
