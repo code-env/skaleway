@@ -40,7 +40,7 @@ const Header = () => {
           />
         </div>
 
-        <ul className="flex-1  hidden lg:flex gap-14">
+        <ul className="hidden lg:flex gap-14">
           {routes.map((route, index) => (
             <NavItem
               label={route.name}

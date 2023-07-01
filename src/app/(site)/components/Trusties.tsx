@@ -1,3 +1,5 @@
+"use client";
+
 import { useTruties } from "@/constants";
 import Image from "next/image";
 import React from "react";
@@ -5,7 +7,7 @@ import { motion } from "framer-motion";
 
 const Trusties = () => {
   const trusties = useTruties();
-  const trustiesRepeated = [...trusties, ...trusties, ...trusties]; // repeat the items three times
+  const trustiesRepeated = [...trusties, ...trusties]; // repeat the items three times
   return (
     <div className="responsive-px">
       <div className="flex w-full flex-col gap-7">
@@ -14,7 +16,7 @@ const Trusties = () => {
         <div className="trusties-container flex w-full justify-between overflow-hidden">
           <motion.div
             animate={{
-              x: [0, 24, 0],
+              x: [0, 400, 400],
             }}
             transition={{
               duration: 1.5,
