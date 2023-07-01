@@ -6,7 +6,7 @@ import { AiFillStar } from "react-icons/ai";
 const Hero = () => {
   return (
     <div
-      className="bg-gradient h-screen relative responsive-px pt-40"
+      className="bg-gradient h-screen relative responsive-px pt-28"
       id="home"
     >
       <div className="w-full text-white flex flex-col gap-5">
