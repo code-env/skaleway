@@ -254,14 +254,19 @@ export const useContactCards = () => {
       {
         name: "Drop a Line",
         icon: CiMail,
+        ln1: "contact@skaleway.com",
+        ln2: "supporteam@skaleway.com",
       },
       {
         name: "24 / 7 Service",
         icon: BiPhoneCall,
+        ln1: "+237 6 54 58 46 24",
       },
       {
         name: "Location",
         icon: FaLocationDot,
+        ln1: "Yaounde - Cameroon",
+        ln2: "Technipole - Polytechnic",
       },
     ],
     []

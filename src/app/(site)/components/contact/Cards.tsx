@@ -7,7 +7,13 @@ const Cards = () => {
   return (
     <div className="flex w-full gap-8">
       {cards.map((card, index) => (
-        <Card key={index} icon={card.icon} label={card.name} />
+        <Card
+          key={index}
+          icon={card.icon}
+          label={card.name}
+          ln1={card.ln1}
+          ln2={card.ln2}
+        />
       ))}
     </div>
   );

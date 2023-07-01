@@ -39,9 +39,32 @@
 
 .card:nth-child(1),
 .card:nth-child(3) {
+  @apply bg-white shadow-md text-secondary transition-all duration-500;
+}
+.card:nth-child(1):hover,
+.card:nth-child(3):hover {
+  @apply bg-secondary shadow-md text-white transition-all;
+}
+.card:nth-child(1):hover .icon,
+.card:nth-child(3):hover .icon {
   @apply bg-white;
 }
 
 .card:nth-child(2) {
+  @apply bg-secondary transition-all duration-500;
+}
+.card:nth-child(2):hover {
+  @apply bg-white text-secondary shadow-md;
+}
+
+.card:nth-child(1) .icon,
+.card:nth-child(3) .icon {
+  @apply bg-secondary text-primary transition-all duration-500;
+}
+
+.card:nth-child(2) .icon {
+  @apply bg-white text-primary transition-all duration-500;
+}
+.card:nth-child(2):hover .icon {
   @apply bg-secondary;
 }
