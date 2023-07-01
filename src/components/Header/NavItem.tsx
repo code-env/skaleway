@@ -17,7 +17,7 @@ const NavItem: React.FC<NavItemProps> = ({ label, href, index }) => {
         { direction: "down" },
         { type: "spring" },
         0,
-        index * 0.1
+        index * 0.3
       )}
       initial="hidden"
       animate="show"

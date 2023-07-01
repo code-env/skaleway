@@ -1,7 +1,12 @@
+"use client";
+
 import Button from "@/components/Button";
 import Image from "next/image";
 import React from "react";
 import { AiFillStar } from "react-icons/ai";
+import { motion } from "framer-motion";
+import { fadeIn, textVariant } from "@/utils/motion";
+import { FaDeviantart } from "react-icons/fa6";
 
 const Hero = () => {
   return (
@@ -10,18 +15,28 @@ const Hero = () => {
       id="home"
     >
       <div className="w-full text-white flex flex-col gap-5">
-        <h1 className="font-sans font-bold lg:text-5xl text-xl lg:leading-[140%] min-[600px]:text-3xl">
+        <motion.h1
+          variants={fadeIn({ direction: "up" }, { type: "tween" }, 0.3, 0.3)}
+          initial="hidden"
+          animate="show"
+          className="font-sans font-bold lg:text-5xl text-xl lg:leading-[140%] min-[600px]:text-3xl"
+        >
           We Design and Develop the <br className="lg:block hidden" /> Digital
           Solutions to Grow <br className="lg:block hidden" /> your{" "}
           <span className="text-primary">Business</span>
-        </h1>
-        <p className="lg:text-xl max-[600px]:text-sm">
+        </motion.h1>
+        <motion.p
+          variants={fadeIn({ direction: "up" }, { type: "tween" }, 0.5, 0.4)}
+          initial="hidden"
+          animate="show"
+          className="lg:text-xl max-[600px]:text-sm"
+        >
           Lorem ipsum dolor sit amet consectetur. Ultrices duis et id{" "}
           <br className="lg:block hidden" />
           tempus. Orci odio in sed id mauris a mattis amet. Mi dui habitant{" "}
           <br className="lg:block hidden" />
           maecenas condimentum mauris sit netus nunc.{" "}
-        </p>
+        </motion.p>
         <Button
           label="Get to Us"
           className="lg:px-36 py-3 transition-all hover:bg-primary lg:w-fit w-full border-primary border rounded "
