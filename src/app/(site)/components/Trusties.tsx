@@ -16,10 +16,10 @@ const Trusties = () => {
         <div className="trusties-container flex w-full justify-between overflow-hidden">
           <motion.div
             animate={{
-              x: [0, 400, 400],
+              x: [0, 400, 0],
             }}
             transition={{
-              duration: 1.5,
+              duration: 0,
               repeat: Infinity,
               repeatType: "loop",
             }}
