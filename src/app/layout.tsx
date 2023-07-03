@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     siteName: "skaleway.com",
     images: [
       {
-        url: "/.png",
+        url: "/https://skaleway.com/placeholder.png",
         width: 2322,
         height: 1306,
       },
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
   },
   icons: {
-    shortcut: "/logo.png",
+    shortcut: "./icon.png",
   },
 };
 
