@@ -35,7 +35,7 @@ const Services = () => {
               </div>
               <Button
                 label="Learn More"
-                className="w-fit px-16  rounded font-semibold text-base py-3 hover:opacity-75 transition-all"
+                className="w-fit px-16  rounded font-semibold text-base py-3 hover:opacity-75 transition-all self-center"
               />
             </div>
           ))}

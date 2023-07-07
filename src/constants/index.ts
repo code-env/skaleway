@@ -2,6 +2,21 @@ import { useMemo } from "react";
 import { BiPhoneCall } from "react-icons/bi";
 import { CiMail } from "react-icons/ci";
 import { FaLocationDot } from "react-icons/fa6";
+import {
+  css,
+  figma,
+  html,
+  illustrator,
+  indesign,
+  javascript,
+  nextjs,
+  nodejs,
+  photoshop,
+  react,
+  terminal,
+  typescript,
+  vscode,
+} from "../../public/Images";
 
 export const useHeaderRoutes = () => {
   const routes = useMemo(
@@ -166,55 +181,55 @@ export const useDevTools = () => {
         elmts: [
           {
             name: "html",
-            icon: "/Images/tools/html.svg",
+            icon: html,
             width: 80,
             height: 80,
           },
           {
             name: "css",
-            icon: "/Images/tools/css.svg",
+            icon: css,
             width: 80,
             height: 80,
           },
           {
             name: "javascript",
-            icon: "/Images/tools/javascript.svg",
+            icon: javascript,
             width: 80,
             height: 80,
           },
           {
             name: "typescript",
-            icon: "/Images/tools/typescript.svg",
+            icon: typescript,
             width: 80,
             height: 80,
           },
           {
             name: "react",
-            icon: "/Images/tools/react.svg",
+            icon: react,
             width: 80,
             height: 80,
           },
           {
             name: "nextjs",
-            icon: "/Images/tools/nextjs.svg",
+            icon: nextjs,
             width: 254,
             height: 51,
           },
           {
             name: "terminal",
-            icon: "/Images/tools/terminal.svg",
+            icon: terminal,
             width: 80,
             height: 80,
           },
           {
             name: "vscode",
-            icon: "/Images/tools/vscode.svg",
+            icon: vscode,
             width: 80,
             height: 80,
           },
           {
             name: "nodejs",
-            icon: "/Images/tools/nodejs.svg",
+            icon: nodejs,
             width: 80,
             height: 80,
           },
@@ -225,25 +240,25 @@ export const useDevTools = () => {
         elmts: [
           {
             name: "figma",
-            icon: "/Images/tools/figma.svg",
+            icon: figma,
             width: 59,
             height: 89,
           },
           {
             name: "photoshop",
-            icon: "/Images/tools/photoshop.svg",
+            icon: photoshop,
             width: 80,
             height: 80,
           },
           {
             name: "indesign",
-            icon: "/Images/tools/indesign.svg",
+            icon: indesign,
             width: 80,
             height: 80,
           },
           {
             name: "illustrator",
-            icon: "/Images/tools/illustrator.svg",
+            icon: illustrator,
             width: 80,
             height: 80,
           },

@@ -40,6 +40,7 @@ const Tools = () => {
                           src={i.icon}
                           height={i.height}
                           width={i.width}
+                          // placeholder="blur"
                           alt={i.name}
                         />
                       </div>

@@ -5,13 +5,13 @@ import Image from "next/image";
 import React from "react";
 import { AiFillStar } from "react-icons/ai";
 import { motion } from "framer-motion";
-import { fadeIn, textVariant } from "@/utils/motion";
-import { FaDeviantart } from "react-icons/fa6";
+import { fadeIn } from "@/utils/motion";
+import watermark from "../../../../public/Images/lg-watermark.png";
 
 const Hero = () => {
   return (
     <div
-      className="bg-gradient h-screen relative responsive-px pt-28"
+      className="bg-gradient h-screen relative responsive-px pt-28 xl:pt-48"
       id="home"
     >
       <div className="w-full text-white flex flex-col gap-5">
@@ -42,22 +42,17 @@ const Hero = () => {
           className="lg:px-36 py-3 transition-all hover:bg-primary lg:w-fit w-full border-primary border rounded "
         />
       </div>
-      <div className="image absolute bottom-0 right-0 hidden lg:block">
-        <Image
-          src="/Images/lg-watermark.png"
-          alt="the watermark"
-          width={400}
-          height={200}
-        />{" "}
+      <div className="image absolute bottom-0 right-0 hidden lg:block ">
+        <Image src={watermark} alt="the watermark" sizes="100vw" />
       </div>
-      <div className="image absolute top-20 right-0 block lg:hidden">
+      {/* <div className="image absolute top-20 right-0 block lg:hidden">
         <Image
           src="/Images/sd-watermark.png"
           alt="the watermark"
           width={124}
           height={142}
         />{" "}
-      </div>
+      </div> */}
       <div className="image absolute bottom-9">
         <p className="text-base text-white">
           5 Happy Clients{" "}
