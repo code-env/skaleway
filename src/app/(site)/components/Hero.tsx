@@ -48,6 +48,7 @@ const Hero = () => {
           alt="the watermark"
           sizes="100vw"
           draggable={false}
+          placeholder="blur"
         />
       </div>
       {/* <div className="image absolute top-20 right-0 block lg:hidden">

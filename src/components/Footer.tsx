@@ -2,6 +2,7 @@ import { useFooterRoutes } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import Logo from "./Logo";
 
 type links = {
   name: string;
@@ -13,14 +14,7 @@ const Footer = () => {
 
   return (
     <div className="bg-secondary h-96 responsive-px text-white py-10 flex gap-[100px]">
-      <div className="logozenith">
-        <Image
-          src="/Images/logo.png"
-          alt="Skale way official logo"
-          width={100}
-          height={100}
-        />
-      </div>
+      <Logo />
       <div className="flex-1 flex justify-between">
         {footerRoutes.map((item, index) => (
           <div key={index} className="flex flex-col gap-2">

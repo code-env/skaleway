@@ -23,7 +23,7 @@ const Counter: React.FC<ScrollCountProps> = ({ start, end, duration }) => {
   }, [inView]);
 
   return (
-    <span ref={ref}>
+    <span ref={ref} className="text-2xl font-bold">
       {isCounting ? (
         <CountUp start={start} end={end} duration={duration} />
       ) : (

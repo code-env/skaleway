@@ -1,9 +1,9 @@
 "use client";
 
 import { useHeaderRoutes } from "@/constants";
-import Image from "next/image";
 import React, { useState } from "react";
 import NavItem from "./NavItem";
+import Logo from "../Logo";
 
 const Header = () => {
   const routes = useHeaderRoutes();
@@ -31,14 +31,7 @@ const Header = () => {
     w-full  text-white z-50`}
     >
       <nav className=" w-full h-full items-center flex lg:gap-72 justify-between">
-        <div className="logozenith">
-          <Image
-            src="/Images/logo.png"
-            alt="Skale way official logo"
-            width={100}
-            height={100}
-          />
-        </div>
+        <Logo />
 
         <ul className="hidden lg:flex gap-14">
           {routes.map((route, index) => (

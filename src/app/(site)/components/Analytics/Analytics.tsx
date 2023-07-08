@@ -11,7 +11,10 @@ const Analytics = () => {
 
         <div className="flex justify-between items-center">
           <div className="flex flex-col gap-4 items-center">
-            <Counter duration={10} end={100} start={0} />
+            <p>
+              <Counter duration={10} end={20} start={0} />{" "}
+              <span className="text-2xl">+</span>
+            </p>
             <p className="font-semibold text-2xl font-sans">Results</p>
           </div>
           <div className="h-14 w-[2px] bg-primary"></div>
