@@ -5,7 +5,7 @@ const AsTeam = () => {
   return (
     <div className="w-full  flex gap-8 max-[700px]:flex-col">
       <div className="flex-1">
-        <Layers height={330} width={552} />
+        <Layers className="h-[330px] w-full" />
       </div>
       <div className="flex-1">
         <h1 className="text-2xl font-inter font-medium text-secondary text-center">
