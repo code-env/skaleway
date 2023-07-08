@@ -8,20 +8,20 @@ const Tools = () => {
   return (
     <div className="responsive-px w-full">
       <div className="flex flex-col gap-7 ">
-        <div className="flex w-full  gap-8">
+        <div className="flex w-full  gap-8 max-[700px]:flex-col-reverse">
           <div className="flex-1 flex flex-col gap-8">
             <h1 className="flex items-center gap-4 text-xl font-semibold">
               Special <span className="h-[2px] w-24 bg-primary"></span>
             </h1>
 
-            <p className="text-[32px] font-bold text-secondary font-sans">
+            <p className="text-[32px] font-bold text-secondary font-sans max-[700px]:text-xl">
               Forward Thinking Team of Designers & Developers
             </p>
-            <div className="flex flex-col gap-2">
-              <Layers height={130} width={552} />
-              <Layers height={130} width={552} />
-              <Layers height={130} width={552} />
-              <Layers height={130} width={552} />
+            <div className="flex flex-col gap-2 flex-1">
+              <Layers className="flex-1 h-[120px]" />
+              <Layers className="flex-1 h-[120px]" />
+              <Layers className="flex-1 h-[120px]" />
+              <Layers className="flex-1 h-[120px]" />
             </div>
           </div>
           <div className="flex-1 flex flex-col gap-8">

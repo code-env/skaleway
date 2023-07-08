@@ -9,23 +9,29 @@ const Analytics = () => {
           Our Analytics <span className="h-[2px] w-24 bg-primary"></span>
         </h1>
 
-        <div className="flex justify-between items-center">
-          <div className="flex flex-col gap-4 items-center">
+        <div className="flex justify-between  flex-wrap max-[700px]">
+          <div className="flex flex-col gap-4 items-center flex-1 max-[700px]:gap-1 max-[700px]:items-start max-[700px]:w-fit ">
             <p>
               <Counter duration={10} end={20} start={0} />{" "}
-              <span className="text-2xl">+</span>
+              <span className="text-2xl max-[700px]:text-sm">+</span>
             </p>
-            <p className="font-semibold text-2xl font-sans">Results</p>
+            <p className="font-semibold text-2xl font-sans max-[700px]:text-sm">
+              Results
+            </p>
           </div>
-          <div className="h-14 w-[2px] bg-primary"></div>
-          <div className="flex flex-col gap-4 items-center">
+          <div className="h-14 w-[2px] bg-primary max-[700px]:hidden" />
+          <div className="flex flex-col gap-4 items-center flex-1 max-[700px]:gap-1 max-[700px]:items-start max-[700px]:w-fit ">
             <Counter duration={10} end={1000} start={0} />
-            <p className="font-semibold text-2xl font-sans">Website Ranking</p>
+            <p className="font-semibold text-2xl font-sans max-[700px]:text-sm">
+              Website Ranking
+            </p>
           </div>
-          <div className="h-14 w-[2px] bg-primary"></div>
-          <div className="flex flex-col gap-4 items-center">
+          <div className="h-14 w-[2px] bg-primary max-[700px]:hidden" />
+          <div className="flex flex-col gap-4 items-center flex-1 max-[700px]:gap-1 max-[700px]:items-start ">
             <Counter duration={10} end={500} start={0} />
-            <p className="font-semibold text-2xl font-sans">Business Growth</p>
+            <p className="font-semibold text-2xl font-sans max-[700px]:text-sm">
+              Business Growth
+            </p>
           </div>
         </div>
       </div>

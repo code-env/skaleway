@@ -5,7 +5,7 @@ import { useContactCards } from "@/constants";
 const Cards = () => {
   const cards = useContactCards();
   return (
-    <div className="flex w-full gap-8">
+    <div className="flex w-full gap-8 max-[700px]:flex-col">
       {cards.map((card, index) => (
         <Card
           key={index}

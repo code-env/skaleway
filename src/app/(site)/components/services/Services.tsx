@@ -11,13 +11,13 @@ const Services = () => {
           Our Services
         </h1>
 
-        <div className="services flex w-full gap-8">
+        <div className="services flex w-full gap-8 max-[700px]:flex-col">
           {services.map((item, index) => (
             <div
               key={index}
-              className="service flex-1 flex flex-col justify-between rounded-[30px] px-16 py-6 "
+              className="service flex-1 flex flex-col justify-between rounded-[30px] px-16 py-6 gap-4"
             >
-              <div>
+              <div className="flex flex-col gap-4">
                 <p className="text-center text-2xl font-semibold">
                   {item.name}
                 </p>
@@ -35,7 +35,7 @@ const Services = () => {
               </div>
               <Button
                 label="Learn More"
-                className="w-fit px-16  rounded font-semibold text-base py-3 hover:opacity-75 transition-all self-center"
+                className="w-fit px-16  rounded font-semibold text-base py-3 hover:opacity-75 transition-all self-center max-[700px]:px-5"
               />
             </div>
           ))}

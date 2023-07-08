@@ -1,20 +1,11 @@
 import React from "react";
 
 interface LayersProps {
-  height: number;
-  width: number;
+  className: string;
 }
 
-const Layers: React.FC<LayersProps> = ({ height, width }) => {
-  return (
-    <div
-      style={{
-        height: height,
-        width: width,
-      }}
-      className="bg-neutral rounded-md"
-    ></div>
-  );
+const Layers: React.FC<LayersProps> = ({ className }) => {
+  return <div className={`bg-neutral rounded-md ${className}`}></div>;
 };
 
 export default Layers;

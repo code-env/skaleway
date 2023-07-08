@@ -13,9 +13,9 @@ const Footer = () => {
   const footerRoutes = useFooterRoutes();
 
   return (
-    <div className="bg-secondary h-96 responsive-px text-white py-10 flex gap-[100px]">
+    <footer className="bg-secondary h-96 responsive-px text-white py-10 max-[700px]:h-fit flex gap-[100px] max-[700px]:flex-col">
       <Logo />
-      <div className="flex-1 flex justify-between">
+      <div className="flex-1 flex justify-between max-[700px]:flex-col">
         {footerRoutes.map((item, index) => (
           <div key={index} className="flex flex-col gap-2">
             <p className="font-bold text-2xl">{item.name}</p>
@@ -47,7 +47,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

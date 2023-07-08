@@ -3,7 +3,7 @@ import React from "react";
 
 const AsTeam = () => {
   return (
-    <div className="w-full  flex gap-8">
+    <div className="w-full  flex gap-8 max-[700px]:flex-col">
       <div className="flex-1">
         <Layers height={330} width={552} />
       </div>

@@ -26,7 +26,8 @@ html {
 
 .service:nth-child(1),
 .service:nth-child(3) {
-  @apply bg-white text-secondary shadow-md h-[550px];
+  @apply bg-white text-secondary h-[550px] max-[700px]:h-fit;
+  box-shadow: 0px 0px 37.18309783935547px 0px rgba(26, 7, 39, 0.1);
 }
 
 .service:nth-child(2) {

@@ -4,9 +4,9 @@ import analytics from "../../../../../public/Images/scalling.png";
 
 const Stats = () => {
   return (
-    <div className="w-full  flex gap-8">
+    <div className="w-full  flex gap-8 max-[700px]:flex-col">
       <div className="flex-1 ">
-        <h1 className="text-[72px] font-inter font-bold text-secondary">
+        <h1 className="text-[72px] font-inter font-bold text-secondary max-[700px]:text-4xl">
           Grow Your Business with Our Agency
         </h1>
       </div>
