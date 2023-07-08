@@ -16,6 +16,7 @@ const Stats = () => {
           alt="skaleway analytics"
           sizes="100vw"
           placeholder="blur"
+          k
         />
       </div>
     </div>

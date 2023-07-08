@@ -6,20 +6,20 @@ import React from "react";
 import { AiFillStar } from "react-icons/ai";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/utils/motion";
-import watermark from "../../../../public/Images/lg-watermark.png";
+import watermark from "../../../../public/Images/2xl-watermark.png";
 
 const Hero = () => {
   return (
     <div
-      className="bg-gradient h-screen relative responsive-px pt-28 xl:pt-48"
+      className="bg-gradient h-screen relative responsive-px pt-28  2xl:pt-60 overflow-hidden"
       id="home"
     >
-      <div className="w-full text-white flex flex-col gap-5">
+      <div className="w-full text-white flex flex-col gap-5 2xl:gap-10">
         <motion.h1
           variants={fadeIn({ direction: "up" }, { type: "tween" }, 0.3, 0.3)}
           initial="hidden"
           animate="show"
-          className="font-sans font-bold lg:text-5xl text-xl lg:leading-[140%] min-[600px]:text-3xl"
+          className="font-sans font-bold lg:text-5xl text-xl lg:leading-[140%] min-[600px]:text-3xl 2xl:text-7xl"
         >
           We Design and Develop the <br className="lg:block hidden" /> Digital
           Solutions to Grow <br className="lg:block hidden" /> your{" "}
@@ -42,8 +42,13 @@ const Hero = () => {
           className="lg:px-36 py-3 transition-all hover:bg-primary lg:w-fit w-full border-primary border rounded "
         />
       </div>
-      <div className="image absolute bottom-0 right-0 hidden lg:block ">
-        <Image src={watermark} alt="the watermark" sizes="100vw" />
+      <div className="image absolute 2xl:-right-[20%] 2xl:-bottom-1/4 hidden lg:block bg-transparent -bottom-1/2 -right-1/3">
+        <Image
+          src={watermark}
+          alt="the watermark"
+          sizes="100vw"
+          draggable={false}
+        />
       </div>
       {/* <div className="image absolute top-20 right-0 block lg:hidden">
         <Image

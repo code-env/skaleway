@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 const Trusties = () => {
   const trusties = useTruties();
-  const trustiesRepeated = [...trusties, ...trusties]; // repeat the items three times
+  const trustiesRepeated = [...trusties]; // repeat the items three times
   return (
     <div className="responsive-px">
       <div className="flex w-full flex-col gap-7">
@@ -23,7 +23,7 @@ const Trusties = () => {
               repeat: Infinity,
               repeatType: "loop",
             }}
-            className="trusties flex"
+            className="trusties flex  w-full justify-between"
           >
             {trustiesRepeated.map((item, index) => (
               <div key={index}>
