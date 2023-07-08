@@ -11,7 +11,7 @@ const AsTeam = () => {
         <h1 className="text-2xl font-inter font-medium text-secondary text-center">
           Skaleway as a Team
         </h1>
-        <p className="text-xl font-inter leading-[170%] text-center">
+        <p className="text-xl font-inter leading-[170%] text-center max-[700px]:text-start max-[700px]:text-xs">
           Lorem ipsum dolor sit amet consectetur. Fames ac nec aenean lectus
           turpis. Mi condimentum varius est at quis non nisi. Elementum laoreet
           proin sit convallis tellus. Id ac diam at a arcu ac nec sagittis
