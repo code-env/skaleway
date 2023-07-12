@@ -8,7 +8,6 @@ const About = () => {
       <h1 className="font-sans text-[32px] text-secondary text-center font-semibold">
         About us
       </h1>
-
       <Stats />
       <AsTeam />
     </div>
