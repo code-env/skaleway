@@ -10,7 +10,7 @@ const Workers: React.FC = () => {
         <div key={index} className="flex-1 flex flex-col gap-2">
           <p className="font-bold text-xl">{worker.name}</p>
 
-          <div className="flex gap-10">
+          <div className="flex gap-10 flex-wrap">
             {worker.people.map((person, index) => (
               <Worker name={person.name} role={person.role} key={index} />
             ))}

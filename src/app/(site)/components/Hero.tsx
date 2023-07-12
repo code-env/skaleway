@@ -11,7 +11,7 @@ import watermark from "../../../../public/Images/2xl-watermark.png";
 const Hero = () => {
   return (
     <div
-      className="bg-gradient h-screen relative responsive-px pt-28  overflow-hidden"
+      className="bg-gradient h-screen max-[700px]:h-fit max-[700px]:pb-56 relative responsive-px pt-28  overflow-hidden"
       id="home"
     >
       <div className="w-full text-white flex flex-col gap-5 2xl:gap-10">

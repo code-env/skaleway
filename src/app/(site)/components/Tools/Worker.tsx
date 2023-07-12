@@ -9,7 +9,7 @@ interface workerProps {
 
 const Worker: React.FC<workerProps> = ({ image, name, role }) => {
   return (
-    <div className="flex-1">
+    <div className="flex-1 group">
       {image ? (
         <Image
           alt={`${name} skaleway ${name}`}
@@ -20,7 +20,7 @@ const Worker: React.FC<workerProps> = ({ image, name, role }) => {
         />
       ) : (
         <div
-          className={`2xl:w-[200px] 2xl:h-[177px] w-[200px] h-[177px]  bg-neutral rounded-md`}
+          className={`2xl:w-[200px] 2xl:h-[177px] w-[200px] h-[177px] duration-500  bg-neutral rounded-md group-hover:blur-sm`}
         ></div>
       )}
 
