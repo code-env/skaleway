@@ -26,7 +26,7 @@ const Trusties = () => {
             className="trusties flex  w-full justify-between flex-wrap items-center"
           >
             {trustiesRepeated.map((item, index) => (
-              <div key={index} className="bg-red-500">
+              <div key={index} className="">
                 <Image
                   src={item.path}
                   alt={item.name}
