@@ -12,7 +12,7 @@ type links = {
 const Footer = () => {
   const footerRoutes = useFooterRoutes();
 
-  const currentYear = Date.now();
+  const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-secondary h responsive-px text-white py-20 h-fit gap-10 flex flex-col">
@@ -54,7 +54,7 @@ const Footer = () => {
 
       <div className="w-full">
         <p className="text-primary text-center">
-          {currentYear} All Rights Reserved - Skaleway
+          &copy; {`${currentYear}`} All Rights Reserved - Skaleway
         </p>
       </div>
     </footer>
