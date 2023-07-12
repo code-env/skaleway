@@ -383,7 +383,7 @@ export const useDevelpers = () => {
           {
             image: elisha,
             name: "Ghany Elisha",
-            role: "Graphic Designer",
+            role: "Graphic Designer & Network Engineer",
           },
           {
             image: kingmark,
