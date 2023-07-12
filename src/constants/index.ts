@@ -4,18 +4,24 @@ import { CiMail } from "react-icons/ci";
 import { FaLocationDot } from "react-icons/fa6";
 import {
   css,
+  elisha,
   figma,
   html,
   illustrator,
   indesign,
   javascript,
+  josias,
+  kingmark,
   nextjs,
   nodejs,
+  philemon,
   photoshop,
   react,
+  romaric,
   terminal,
   typescript,
   vscode,
+  zenith,
 } from "../../public/Images";
 
 export const useHeaderRoutes = () => {
@@ -182,56 +188,56 @@ export const useDevTools = () => {
           {
             name: "html",
             icon: html,
-            width: 80,
-            height: 80,
+            width: 44,
+            height: 44,
           },
           {
             name: "css",
             icon: css,
-            width: 80,
-            height: 80,
+            width: 44,
+            height: 44,
           },
           {
             name: "javascript",
             icon: javascript,
-            width: 80,
-            height: 80,
+            width: 44,
+            height: 44,
           },
           {
             name: "typescript",
             icon: typescript,
-            width: 80,
-            height: 80,
+            width: 44,
+            height: 44,
           },
           {
             name: "react",
             icon: react,
-            width: 80,
-            height: 80,
+            width: 44,
+            height: 44,
           },
           {
             name: "nextjs",
             icon: nextjs,
-            width: 254,
-            height: 51,
+            width: 140,
+            height: 28,
           },
           {
             name: "terminal",
             icon: terminal,
-            width: 80,
-            height: 80,
+            width: 44,
+            height: 44,
           },
           {
             name: "vscode",
             icon: vscode,
-            width: 80,
-            height: 80,
+            width: 44,
+            height: 44,
           },
           {
             name: "nodejs",
             icon: nodejs,
-            width: 80,
-            height: 80,
+            width: 44,
+            height: 44,
           },
         ],
       },
@@ -241,26 +247,26 @@ export const useDevTools = () => {
           {
             name: "figma",
             icon: figma,
-            width: 59,
-            height: 89,
+            width: 32,
+            height: 49,
           },
           {
             name: "photoshop",
             icon: photoshop,
-            width: 80,
-            height: 80,
+            width: 44,
+            height: 44,
           },
           {
             name: "indesign",
             icon: indesign,
-            width: 80,
-            height: 80,
+            width: 44,
+            height: 44,
           },
           {
             name: "illustrator",
             icon: illustrator,
-            width: 80,
-            height: 80,
+            width: 44,
+            height: 44,
           },
         ],
       },
@@ -361,4 +367,54 @@ export const useFooterRoutes = () => {
   );
 
   return routes;
+};
+
+export const useDevelpers = () => {
+  const developers = useMemo(
+    () => [
+      {
+        name: "Desginers",
+        people: [
+          {
+            image: philemon,
+            name: "Philemon Tebo",
+            role: "UI/UX Designer & Graphic Designer",
+          },
+          {
+            image: elisha,
+            name: "Ghany Elisha",
+            role: "Graphic Designer",
+          },
+          {
+            image: kingmark,
+            name: "King-Mark",
+            role: "Graphic Designer",
+          },
+        ],
+      },
+      {
+        name: "Developers",
+        people: [
+          {
+            image: romaric,
+            name: "Romaric Lonfonyuy",
+            role: "Backend Developer",
+          },
+          {
+            image: josias,
+            name: "Josias Aurel",
+            role: "Full Stack Web Developer & Project Manager",
+          },
+          {
+            image: zenith,
+            name: "Bossadi Zenith",
+            role: "Full Stack Web Developer",
+          },
+        ],
+      },
+    ],
+    []
+  );
+
+  return developers;
 };

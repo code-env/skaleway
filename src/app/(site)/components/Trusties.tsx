@@ -23,15 +23,16 @@ const Trusties = () => {
               repeat: Infinity,
               repeatType: "loop",
             }}
-            className="trusties flex  w-full justify-between"
+            className="trusties flex  w-full justify-between flex-wrap items-center"
           >
             {trustiesRepeated.map((item, index) => (
-              <div key={index}>
+              <div key={index} className="bg-red-500">
                 <Image
                   src={item.path}
                   alt={item.name}
                   height={item.height}
                   width={item.width}
+                  draggable={false}
                 />
               </div>
             ))}

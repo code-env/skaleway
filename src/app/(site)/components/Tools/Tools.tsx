@@ -1,10 +1,11 @@
 import Layers from "@/components/Layers";
-import { useDevTools } from "@/constants";
+import { useDevTools, useDevelpers } from "@/constants";
 import Image from "next/image";
 import React from "react";
 
 const Tools = () => {
   const tools = useDevTools();
+  const workers = useDevelpers();
   return (
     <div className="responsive-px w-full">
       <div className="flex flex-col gap-7 ">
@@ -17,11 +18,26 @@ const Tools = () => {
             <p className="text-[32px] font-bold text-secondary font-sans max-[700px]:text-xl">
               Forward Thinking Team of Designers & Developers
             </p>
-            <div className="flex flex-col gap-2 flex-1">
-              <Layers className="flex-1 h-[120px]" />
-              <Layers className="flex-1 h-[120px]" />
-              <Layers className="flex-1 h-[120px]" />
-              <Layers className="flex-1 h-[120px]" />
+            <div className="flex flex-col gap-2 flex-1 justify-between">
+              {workers.map((worker, index) => (
+                <div key={index} className="flex-1">
+                  <p className="font-bold text-xl">{worker.name}</p>
+
+                  <div className="flex flex-wrap bg-red-500 justify-between">
+                    {worker.people.map((person, index) => (
+                      <div key={index} className="bg-black">
+                        <Image
+                          alt={`${person.name} skaleway ${worker.name}`}
+                          src={person.image}
+                          width={161}
+                          height={177}
+                          draggable={false}
+                        />
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
           <div className="flex-1 flex flex-col gap-8">

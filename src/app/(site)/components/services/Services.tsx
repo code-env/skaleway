@@ -26,7 +26,7 @@ const Services = () => {
                   {item.elmts.map((item, index) => (
                     <li
                       key={index}
-                      className="text-xl font-normal leading-[180%]"
+                      className="text-xl font-normal leading-[180%] max-[700px]:text-base"
                     >
                       {item.name}
                     </li>
