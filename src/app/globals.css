@@ -12,10 +12,6 @@
   --color-neutral: #d9d9d9;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 .responsive-px {
   @apply lg:px-32 px-8;
 }
@@ -72,4 +68,10 @@ html {
 }
 .card:nth-child(2):hover .icon {
   @apply bg-secondary;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
 }

@@ -20,14 +20,14 @@ const Worker: React.FC<workerProps> = ({ image, name, role }) => {
         />
       ) : (
         <div
-          className={`2xl:w-[200px] 2xl:h-[177px] w-[200px] h-[177px] duration-500  bg-neutral rounded-md group-hover:blur-sm`}
+          className={`2xl:w-[200px] 2xl:h-[177px] w-[150px] h-[177px] duration-500  bg-neutral rounded-md group-hover:blur-sm cursor-pointer`}
         ></div>
       )}
 
       <div className="user profession">
         <p className="flex flex-col">
           <span className="font-bold font-sans text-base">{name}</span>{" "}
-          <span>{role}</span>
+          <span className="text-xs">{role}</span>
         </p>
       </div>
     </div>
