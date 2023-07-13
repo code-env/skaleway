@@ -18,7 +18,7 @@ const Footer = () => {
     <footer className="bg-secondary h responsive-px text-white py-20 h-fit gap-10 flex flex-col">
       <div className="w-full flex gap-[100px] max-[700px]:flex-col">
         <Logo />
-        <div className="flex-1 flex justify-between max-[700px]:flex-col">
+        <div className="flex-1 flex justify-between max-[700px]:flex-col max-[700px]:gap-8">
           {footerRoutes.map((item, index) => (
             <div key={index} className="flex flex-col gap-2">
               <p className="font-bold text-2xl">{item.name}</p>

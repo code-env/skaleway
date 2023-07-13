@@ -19,7 +19,7 @@ const Hero = () => {
           variants={fadeIn({ direction: "up" }, { type: "tween" }, 0.3, 0.3)}
           initial="hidden"
           animate="show"
-          className="font-sans font-bold lg:text-5xl text-xl lg:leading-[140%] 2xl:leading-[140%] min-[600px]:text-3xl 2xl:text-7xl"
+          className="font-sans font-bold lg:text-5xl text-xl lg:leading-[140%] 2xl:leading-[140%] min-[600px]:text-4xl 2xl:text-7xl"
         >
           We Design and Develop the <br className="lg:block hidden" /> Digital
           Solutions to Grow <br className="lg:block hidden" /> your{" "}

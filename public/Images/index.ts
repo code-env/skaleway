@@ -15,7 +15,7 @@ import philemon from "./developers/philemon.jpeg";
 import elisha from "./developers/elisha.jpeg";
 import kingmark from "./developers/king-mark.jpeg";
 import romaric from "./developers/romaric.png";
-import josias from "./developers/josias.png";
+import josias from "./developers/josias.jpeg";
 import zenith from "./developers/zenith.jpeg";
 
 export {

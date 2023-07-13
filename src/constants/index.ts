@@ -494,7 +494,7 @@ export const useDevelpers = () => {
             ],
           },
           {
-            image: "/Images/developers/josias.png",
+            image: "/Images/developers/josias.jpeg",
             name: "Josias Aurel",
             role: "Full Stack Web Developer & Project Manager",
             links: [
