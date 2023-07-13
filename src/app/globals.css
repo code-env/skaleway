@@ -16,8 +16,11 @@
   @apply lg:px-32 px-8;
 }
 
+/* background: var(--linear-fill-hero, linear-gradient(224deg, #1E082D 0%, #07020B 100%));
+background: var(--linear-gradient, linear-gradient(224deg, #1E082D 0%, #07020B 100%)); */
+
 .bg-gradient {
-  background: linear-gradient(252.91deg, #1e082d 1.42%, #07020b 101.68%);
+  background: linear-gradient(224deg, #1e082d 0%, #07020b 100%);
 }
 
 .service:nth-child(1),

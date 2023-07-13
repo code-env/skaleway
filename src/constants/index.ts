@@ -376,19 +376,85 @@ export const useDevelpers = () => {
         name: "Desginers",
         people: [
           {
-            image: philemon,
+            image: "/Images/developers/philemon.jpeg",
             name: "Philemon Tebo",
             role: "UI/UX Designer & Graphic Designer",
+            links: [
+              {
+                name: "Linkedin",
+                link: "https://linkedin.com/in/",
+                icon: "",
+              },
+              {
+                name: "Twitter",
+                link: "https://twitter.com/",
+                icon: "",
+              },
+              {
+                name: "facebook",
+                link: "https://facebook.com/",
+                icon: "",
+              },
+              {
+                name: "figma",
+                link: "https://figma.com/",
+                icon: "",
+              },
+            ],
           },
           {
-            image: elisha,
+            image: "/Images/developers/elisha.jpeg",
             name: "Ghany Elisha",
             role: "Graphic Designer & Network Engineer",
+            links: [
+              {
+                name: "Linkedin",
+                link: "https://linkedin.com/in/",
+                icon: "",
+              },
+              {
+                name: "Twitter",
+                link: "https://twitter.com/",
+                icon: "",
+              },
+              {
+                name: "facebook",
+                link: "https://facebook.com/",
+                icon: "",
+              },
+              {
+                name: "figma",
+                link: "https://figma.com/",
+                icon: "",
+              },
+            ],
           },
           {
-            image: kingmark,
+            image: "/Images/developers/king-mark.jpeg",
             name: "King-Mark",
             role: "Graphic Designer",
+            links: [
+              {
+                name: "Linkedin",
+                link: "https://linkedin.com/in/",
+                icon: "",
+              },
+              {
+                name: "Twitter",
+                link: "https://twitter.com/",
+                icon: "",
+              },
+              {
+                name: "facebook",
+                link: "https://facebook.com/",
+                icon: "",
+              },
+              {
+                name: "figma",
+                link: "https://figma.com/",
+                icon: "",
+              },
+            ],
           },
         ],
       },
@@ -396,19 +462,100 @@ export const useDevelpers = () => {
         name: "Developers",
         people: [
           {
-            image: romaric,
+            image: "/Images/developers/romaric.png",
             name: "Romaric Lonfonyuy",
             role: "Backend Developer",
+            links: [
+              {
+                name: "Linkedin",
+                link: "https://linkedin.com/in/",
+                icon: "",
+              },
+              {
+                name: "Twitter",
+                link: "https://twitter.com/",
+                icon: "",
+              },
+              {
+                name: "facebook",
+                link: "https://facebook.com/",
+                icon: "",
+              },
+              {
+                name: "figma",
+                link: "https://figma.com/",
+                icon: "",
+              },
+              {
+                name: "github",
+                link: "https://github.com/",
+                icon: "",
+              },
+            ],
           },
           {
-            image: josias,
+            image: "/Images/developers/josias.png",
             name: "Josias Aurel",
             role: "Full Stack Web Developer & Project Manager",
+            links: [
+              {
+                name: "Linkedin",
+                link: "https://linkedin.com/in/",
+                icon: "",
+              },
+              {
+                name: "Twitter",
+                link: "https://twitter.com/",
+                icon: "",
+              },
+              {
+                name: "facebook",
+                link: "https://facebook.com/",
+                icon: "",
+              },
+              {
+                name: "figma",
+                link: "https://figma.com/",
+                icon: "",
+              },
+              {
+                name: "github",
+                link: "https://github.com/",
+                icon: "",
+              },
+            ],
           },
           {
-            image: zenith,
+            image: "/Images/developers/zenith.jpeg",
             name: "Bossadi Zenith",
             role: "Full Stack Web Developer",
+            links: [
+              {
+                name: "Linkedin",
+                link: "https://linkedin.com/in/",
+                icon: "",
+              },
+              {
+                name: "Twitter",
+                link: "https://twitter.com/",
+                icon: "",
+              },
+              {
+                name: "facebook",
+                link: "https://facebook.com/",
+                icon: "",
+              },
+              {
+                name: "figma",
+                link: "https://figma.com/",
+                icon: "",
+              },
+              {
+                name: "github",
+                link: "https://github.com/",
+                icon: "",
+              },
+            ],
           },
         ],
       },

@@ -11,12 +11,12 @@ import figma from "./tools/figma.svg";
 import photoshop from "./tools/photoshop.svg";
 import indesign from "./tools/indesign.svg";
 import illustrator from "./tools/illustrator.svg";
-import philemon from "./developers/philemon.png";
-import elisha from "./developers/elisha.png";
-import kingmark from "./developers/kingmark.png";
+import philemon from "./developers/philemon.jpeg";
+import elisha from "./developers/elisha.jpeg";
+import kingmark from "./developers/king-mark.jpeg";
 import romaric from "./developers/romaric.png";
 import josias from "./developers/josias.png";
-import zenith from "./developers/zenith.png";
+import zenith from "./developers/zenith.jpeg";
 
 export {
   html,

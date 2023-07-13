@@ -1,10 +1,10 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import React from "react";
 
 interface workerProps {
-  image?: string;
   name: string;
   role: string;
+  image?: string;
 }
 
 const Worker: React.FC<workerProps> = ({ image, name, role }) => {
@@ -13,10 +13,11 @@ const Worker: React.FC<workerProps> = ({ image, name, role }) => {
       {image ? (
         <Image
           alt={`${name} skaleway ${name}`}
-          src={image}
+          src={`${image}`}
           width={161}
           height={177}
           draggable={false}
+          className="h-[177px] rounded-lg object-cover group-hover:blur-sm cursor-pointer duration-300"
         />
       ) : (
         <div

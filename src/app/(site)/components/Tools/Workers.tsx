@@ -12,7 +12,12 @@ const Workers: React.FC = () => {
 
           <div className="flex gap-10 flex-wrap">
             {worker.people.map((person, index) => (
-              <Worker name={person.name} role={person.role} key={index} />
+              <Worker
+                name={person.name}
+                role={person.role}
+                key={index}
+                image={person.image}
+              />
             ))}
           </div>
         </div>
