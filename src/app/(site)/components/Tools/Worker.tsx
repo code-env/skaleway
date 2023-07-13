@@ -9,7 +9,7 @@ interface workerProps {
 
 const Worker: React.FC<workerProps> = ({ image, name, role }) => {
   return (
-    <div className="flex-1 group">
+    <div className="flex-1 rounded-lg gap-4 group flex flex-col duration-300 overflow-hidden">
       {image ? (
         <Image
           alt={`${name} skaleway ${name}`}
@@ -17,7 +17,7 @@ const Worker: React.FC<workerProps> = ({ image, name, role }) => {
           width={161}
           height={177}
           draggable={false}
-          className="h-[177px] rounded-lg object-cover group-hover:blur-sm cursor-pointer duration-300"
+          className="h-[177px] rounded-lg object-cover cursor-pointer duration-300 group-hover:scale-110 self-center"
         />
       ) : (
         <div
