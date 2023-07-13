@@ -73,8 +73,6 @@ background: var(--linear-gradient, linear-gradient(224deg, #1E082D 0%, #07020B 1
   @apply bg-secondary;
 }
 
-@layer base {
-  html {
-    scroll-behavior: smooth;
-  }
+.sidebar {
+  height: calc(100vh - 80px);
 }

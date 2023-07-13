@@ -1,12 +1,18 @@
 "use client";
 
 import { useHeaderRoutes } from "@/constants";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import NavItem from "./NavItem";
 import Logo from "../Logo";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
   const routes = useHeaderRoutes();
+  const pathname = usePathname();
+
+  useEffect(() => {
+    console.log(pathname);
+  }, []);
 
   const [bgColor, setBgColor] = useState(false);
 
@@ -25,6 +31,7 @@ const Header = () => {
   return (
     <header
       className={`
+      ${pathname === "/portfolio" && "bg-gradient"}
       ${
         bgColor ? "backdrop-blur-lg bg-black/30 z-50" : "bg-transparent"
       } responsive-px font-inter h-20 fixed top-0 left-0
