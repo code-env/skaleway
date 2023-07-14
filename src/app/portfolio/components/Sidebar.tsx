@@ -22,20 +22,25 @@ const Sidebar: React.FC = () => {
 
   return (
     <div
-      className={`sidebar fixed top-20 left-20 flex items-center  w-14 transition-all duration-300 ${
+      className={`sidebar z-10 fixed top-20 left-20 flex items-center  w-14 transition-all duration-300 ${
         isActive && "w-96"
       }`}
       onMouseEnter={() => setIsActive(true)}
       onMouseLeave={() => setIsActive(false)}
     >
-      <div className="wrapper w-full h-[90%]  bg-slate-500 rounded-2xl">
-        <ul>
+      <div className="wrapper w-full h-[90%]  bg-slate-500 rounded-2xl overflow-hidden ">
+        <ul
+          className={`overflow-hidden w-full flex flex-col  pt-10 gap-4 h-full bg-black  text-white`}
+        >
           {routes.map((route, index) => (
-            <li className="flex items-center gap-4 cursor-pointer">
+            <li
+              key={index}
+              className="flex items-center gap-4 cursor-pointer w-[95%] mx-auto justify-center relative bg-red-500 p-1"
+            >
               <span className="h-10 w-10 rounded-md bg-white"></span>
               <span
-                className={` transition-all opacity-0 duration-300 ${
-                  isActive && "opacity-100"
+                className={`transition-all  duration-300 absolute ${
+                  isActive ? "left-14 opacity-100" : "-right-60 opacity-0"
                 }`}
               >
                 {route.label}

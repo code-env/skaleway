@@ -15,7 +15,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-secondary h responsive-px text-white py-20 h-fit gap-10 flex flex-col">
+    <footer className="bg-secondary h responsive-px text-white py-20 h-fit gap-10 flex flex-col z-50">
       <div className="w-full flex gap-[100px] max-[700px]:flex-col">
         <Logo />
         <div className="flex-1 flex justify-between max-[700px]:flex-col max-[700px]:gap-8">
