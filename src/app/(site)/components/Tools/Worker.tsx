@@ -11,7 +11,7 @@ const Worker: React.FC<workerProps> = ({ image, name, role }) => {
   return (
     <div className="max-w-[161px] rounded-lg gap-4 group flex flex-col duration-300 max-[700px]:max-w-[200px] max-[400px]:max-w-[145px]">
       {image ? (
-        <div className="rounded-lg overflow-hidden w-fit">
+        <div className="rounded-lg overflow-hidden w-fit worker-overlay hover:relative">
           <Image
             alt={`${name} skaleway ${name}`}
             src={`${image}`}
