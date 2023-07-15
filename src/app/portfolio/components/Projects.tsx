@@ -1,7 +1,11 @@
 import React from "react";
 import Project from "./Project";
 
-const Projects = () => {
+interface projectsProp {
+  isActive: boolean;
+}
+
+const Projects: React.FC<projectsProp> = ({ isActive }) => {
   const projects = [
     {
       height: 100,
@@ -32,7 +36,11 @@ const Projects = () => {
     },
   ];
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 grid-flow-dense md:grid-cols-3 projects grid-rows-[masonry] xl:grid-cols-4">
+    <div
+      className={`grid grid-cols-1 sm:grid-cols-2 gap-4 grid-flow-dense md:grid-cols-3 projects grid-rows-[masonry] transition-all duration-300 ${
+        isActive ? "xl:grid-cols-3" : "xl:grid-cols-4"
+      }`}
+    >
       {projects.map((project, index) => (
         <Project height={project.height} key={index} />
       ))}

@@ -1,12 +1,12 @@
-"use client";
-
-import React, { useState } from "react";
-import Image from "next/image";
+import React from "react";
 import { Graphic, UiAndUx, WebDev } from "../../../../public/Images/icons/ui";
 
-const Sidebar: React.FC = () => {
-  const [isActive, setIsActive] = useState(false);
+interface sidebarProps {
+  isActive: boolean;
+  setIsActive: (e: boolean) => void;
+}
 
+const Sidebar: React.FC<sidebarProps> = ({ isActive, setIsActive }) => {
   const routes = [
     {
       label: "UI/UX designs",
@@ -24,7 +24,7 @@ const Sidebar: React.FC = () => {
 
   return (
     <div
-      className={`sidebar z-10 fixed top-20 left-10 flex items-center  w-14 transition-all duration-300 ${
+      className={`sidebar z-10 sticky top-20 left-10 flex items-center  w-14 transition-all duration-300 ${
         isActive && "w-64"
       }`}
       onMouseEnter={() => setIsActive(true)}
@@ -43,7 +43,7 @@ const Sidebar: React.FC = () => {
                 <route.icon
                   size={10}
                   className="group-hover:text-primary"
-                  fillColor=""
+                  fillColor="green"
                 />
               </span>
               <span
