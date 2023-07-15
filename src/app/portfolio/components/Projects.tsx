@@ -45,18 +45,11 @@ const Projects: React.FC<projectsProp> = ({ isActive }) => {
   };
 
   return (
-    // <div
-    //   className={`grid grid-cols-1 sm:grid-cols-2 gap-4 grid-flow-dense md:grid-cols-3 projects grid-rows-[masonry] transition-all duration-300 ${
-    //     isActive ? "xl:grid-cols-3" : "xl:grid-cols-4"
-    //   }`}
-    // >
-
     <Masonry className="flex gap-4" breakpointCols={breakpointColumnsObj}>
       {projects.map((project, index) => (
         <Project height={project.height} key={index} index={index} />
       ))}
     </Masonry>
-    // </div>
   );
 };
 
