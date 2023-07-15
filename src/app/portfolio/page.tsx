@@ -9,7 +9,7 @@ const Porfolio = () => {
   return (
     <div className="min-h-screen flex">
       <Sidebar isActive={isActive} setIsActive={setIsActive} />
-      <div className="responsive-px relative pt-28 flex flex-col gap-5 h-full w-full">
+      <div className="pr-8 lg:pr-32 pl-8 lg:pl-20 relative pt-28 flex flex-col gap-5 h-full w-full">
         <p className="text-4xl font-bold font-sans">
           See what could <br />
           <span className="text-primary">Be Yours</span>
