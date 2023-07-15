@@ -16,9 +16,6 @@ const Porfolio = () => {
         </p>
         <Wrapper isActive={isActive} />
         <div />
-        <div />
-        <div />
-        <div />
       </div>
     </div>
   );
