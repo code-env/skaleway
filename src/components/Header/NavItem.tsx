@@ -16,8 +16,8 @@ const NavItem: React.FC<NavItemProps> = ({ label, href, index }) => {
       variants={fadeIn(
         { direction: "down" },
         { type: "spring" },
-        0,
-        index * 0.3
+        0.3,
+        index * 1
       )}
       initial="hidden"
       animate="show"

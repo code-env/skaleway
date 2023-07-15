@@ -16,7 +16,7 @@ const Hero = () => {
     >
       <div className="w-full text-white flex flex-col gap-5 2xl:gap-10">
         <motion.h1
-          variants={fadeIn({ direction: "up" }, { type: "tween" }, 0.3, 0.3)}
+          variants={fadeIn({ direction: "up" }, { type: "spring" }, 0.3, 2)}
           initial="hidden"
           animate="show"
           className="font-sans font-bold lg:text-5xl text-xl lg:leading-[140%] 2xl:leading-[140%] min-[600px]:text-4xl 2xl:text-7xl"
