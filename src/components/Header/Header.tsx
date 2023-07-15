@@ -5,6 +5,7 @@ import React, { useEffect, useState } from "react";
 import NavItem from "./NavItem";
 import Logo from "../Logo";
 import { useParams, usePathname } from "next/navigation";
+import { Example } from "../HambugerMenu/Meny";
 
 const Header = () => {
   const routes = useHeaderRoutes();
@@ -53,11 +54,9 @@ const Header = () => {
           ))}
         </ul>
 
-        {/* <ul className="flex-1 bg-blue-200 block lg:hidden">
-          {routes.map((route, index) => (
-            <NavItem label={route.name} href={route.path} key={index} />
-          ))}
-        </ul> */}
+        <div className="relative max-[700px]:block hidden">
+          <Example />
+        </div>
       </nav>
     </header>
   );
