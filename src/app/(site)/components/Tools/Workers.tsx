@@ -5,7 +5,7 @@ import Worker from "./Worker";
 const Workers: React.FC = () => {
   const workers = useDevelpers();
   return (
-    <div className="flex flex-col gap-2 flex-1 justify-between">
+    <div className="flex flex-col gap-2 flex-1 justify-between" id="team">
       {workers.map((worker, index) => (
         <div key={index} className="flex-1 flex flex-col gap-2">
           <p className="font-bold text-xl">{worker.name}</p>

@@ -4,14 +4,15 @@ import { useHeaderRoutes } from "@/constants";
 import React, { useEffect, useState } from "react";
 import NavItem from "./NavItem";
 import Logo from "../Logo";
-import { usePathname } from "next/navigation";
+import { useParams, usePathname } from "next/navigation";
 
 const Header = () => {
   const routes = useHeaderRoutes();
   const pathname = usePathname();
+  const params = useParams();
 
   useEffect(() => {
-    console.log(pathname);
+    console.log(params);
   }, []);
 
   const [bgColor, setBgColor] = useState(false);
@@ -47,6 +48,7 @@ const Header = () => {
               href={route.path}
               key={index}
               index={index}
+              link={route.link}
             />
           ))}
         </ul>

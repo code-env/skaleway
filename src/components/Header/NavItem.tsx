@@ -6,11 +6,12 @@ import { fadeIn } from "@/utils/motion";
 
 interface NavItemProps {
   label: string;
-  href: string;
+  href?: string;
+  link?: string;
   index: number;
 }
 
-const NavItem: React.FC<NavItemProps> = ({ label, href, index }) => {
+const NavItem: React.FC<NavItemProps> = ({ label, href, link, index }) => {
   return (
     <motion.li
       variants={fadeIn(
@@ -22,12 +23,21 @@ const NavItem: React.FC<NavItemProps> = ({ label, href, index }) => {
       initial="hidden"
       animate="show"
     >
-      <Link
-        href={`#${href}`}
-        className="font-semibold hover:opacity-75 transition"
-      >
-        {label}
-      </Link>
+      {href ? (
+        <Link
+          href={`#${href}`}
+          className="font-semibold hover:opacity-75 transition"
+        >
+          {label}
+        </Link>
+      ) : (
+        <Link
+          href={`${link}`}
+          className="font-semibold hover:opacity-75 transition"
+        >
+          {label}
+        </Link>
+      )}
     </motion.li>
   );
 };

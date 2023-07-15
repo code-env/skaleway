@@ -5,7 +5,7 @@ import React from "react";
 const Services = () => {
   const services = useServices();
   return (
-    <div className="responsive-px w-full">
+    <div className="responsive-px w-full" id="services">
       <div className="flex flex-col gap-10">
         <h1 className="font-sans text-[32px] text-secondary text-center font-semibold">
           Our Services

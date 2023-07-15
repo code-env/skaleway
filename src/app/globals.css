@@ -18,10 +18,8 @@
 
 html {
   scroll-behavior: smooth !important;
+  scroll-padding: 5rem;
 }
-
-/* background: var(--linear-fill-hero, linear-gradient(224deg, #1E082D 0%, #07020B 100%));
-background: var(--linear-gradient, linear-gradient(224deg, #1E082D 0%, #07020B 100%)); */
 
 .bg-gradient {
   background: linear-gradient(224deg, #1e082d 0%, #07020b 100%);
@@ -85,6 +83,11 @@ background: var(--linear-gradient, linear-gradient(224deg, #1E082D 0%, #07020B 1
   content: "";
   height: 100%;
   width: 100%;
+  /* grid-template-rows: ; */
   background-color: red;
   position: absolute;
+}
+
+.projects {
+  grid-template-rows: masonry !important;
 }

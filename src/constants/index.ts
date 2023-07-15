@@ -37,7 +37,7 @@ export const useHeaderRoutes = () => {
       },
       {
         name: "Porfolio",
-        path: "portfolio",
+        link: "/portfolio",
       },
       {
         name: "Services",

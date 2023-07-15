@@ -12,6 +12,10 @@ const Porfolio = () => {
           <span className="text-primary">Be Yours</span>
         </p>
         <Wrapper />
+        <div />
+        <div />
+        <div />
+        <div />
       </div>
     </div>
   );
