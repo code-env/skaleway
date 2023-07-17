@@ -26,7 +26,7 @@ const Hero = () => {
           Solutions to Grow <br className="lg:block hidden" /> your{" "}
           <span className="text-primary">
             <Typewriter
-              words={["Eat", "Sleep", "Code", "Repeat!"]}
+              words={["Business", "Organisation", "Portfolio", "Startup!"]}
               loop={true}
               // cursor
               // cursorStyle="_"
