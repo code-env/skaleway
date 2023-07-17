@@ -439,17 +439,17 @@ export const useDevelpers = () => {
             links: [
               {
                 name: "Linkedin",
-                link: "https://linkedin.com/in/",
+                link: "https://www.linkedin.com/in/royal-designs-a23134261",
                 icon: BsLinkedin,
               },
               {
-                name: "Twitter",
-                link: "https://twitter.com/",
+                name: "Instagram",
+                link: "https://www.instagram.com/royal_designs56?r=nametag",
                 icon: BsTwitter,
               },
               {
                 name: "facebook",
-                link: "https://facebook.com/",
+                link: "https://www.facebook.com/profile.php?id=100077415955538",
                 icon: BsFacebook,
               },
             ],
