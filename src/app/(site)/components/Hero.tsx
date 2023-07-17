@@ -6,8 +6,17 @@ import { AiFillStar } from "react-icons/ai";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/utils/motion";
 import WaterMark from "./watermark";
+import { Typewriter } from "react-simple-typewriter";
 
 const Hero = () => {
+  const handleType = (count: number) => {
+    // access word count number
+    console.log(count);
+  };
+
+  const handleDone = () => {
+    console.log(`Done after 5 loops!`);
+  };
   return (
     <div
       className="bg-gradient h-screen max-[700px]:h-fit max-[700px]:pb-56 relative responsive-px pt-28  overflow-hidden"
@@ -22,7 +31,19 @@ const Hero = () => {
         >
           We Design and Develop the <br className="lg:block hidden" /> Digital
           Solutions to Grow <br className="lg:block hidden" /> your{" "}
-          <span className="text-primary">Business</span>
+          <span className="text-primary">
+            <Typewriter
+              words={["Eat", "Sleep", "Code", "Repeat!"]}
+              loop={5}
+              cursor
+              cursorStyle="_"
+              typeSpeed={70}
+              deleteSpeed={50}
+              delaySpeed={1000}
+              onLoopDone={handleDone}
+              onType={handleType}
+            />
+          </span>
         </motion.h1>
         <motion.p
           variants={fadeIn({ direction: "up" }, { type: "tween" }, 0.5, 0.4)}
