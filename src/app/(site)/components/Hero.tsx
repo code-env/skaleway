@@ -1,12 +1,11 @@
 "use client";
 
 import Button from "@/components/Button";
-import Image from "next/image";
 import React from "react";
 import { AiFillStar } from "react-icons/ai";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/utils/motion";
-import watermark from "../../../../public/Images/2xl-watermark.png";
+import WaterMark from "./watermark";
 
 const Hero = () => {
   return (
@@ -42,7 +41,7 @@ const Hero = () => {
           className="lg:px-36 py-3 transition-all hover:bg-primary lg:w-fit w-full border-primary border rounded "
         />
       </div>
-      <div className="image absolute 2xl:-right-[20%] 2xl:-bottom-[5%] hidden lg:block bg-transparent -bottom-1/2 -right-1/3">
+      {/* <div className="image absolute 2xl:-right-[20%] 2xl:-bottom-[5%] hidden lg:block bg-transparent -bottom-1/2 -right-1/3">
         <Image
           src={watermark}
           alt="the watermark"
@@ -50,7 +49,8 @@ const Hero = () => {
           draggable={false}
           placeholder="blur"
         />
-      </div>
+      </div> */}
+      <WaterMark />
       {/* <div className="image absolute top-20 right-0 block lg:hidden">
         <Image
           src="/Images/sd-watermark.png"

@@ -15,7 +15,7 @@ const Services = () => {
           {services.map((item, index) => (
             <div
               key={index}
-              className="service flex-1 flex flex-col justify-between rounded-[30px] px-16 py-6 gap-4"
+              className="service flex-1 flex flex-col justify-between rounded-[10px] px-16 py-6 gap-4"
             >
               <div className="flex flex-col gap-4">
                 <p className="text-center text-2xl font-semibold">
