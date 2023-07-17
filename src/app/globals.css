@@ -79,13 +79,19 @@ html {
   height: calc(100vh - 80px);
 }
 
+.worker-overlay {
+  position: relative;
+}
+
 .worker-overlay:hover::after {
   content: "";
   height: 100%;
   width: 100%;
-  /* grid-template-rows: ; */
-  background-color: red;
+  top: 0;
+  left: 0;
+  @apply bg-black/50;
   position: absolute;
+  transition: 0.3s ease-in-out;
 }
 
 .projects {
