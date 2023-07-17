@@ -9,14 +9,7 @@ import WaterMark from "./watermark";
 import { Typewriter } from "react-simple-typewriter";
 
 const Hero = () => {
-  const handleType = (count: number) => {
-    // access word count number
-    console.log(count);
-  };
-
-  const handleDone = () => {
-    console.log(`Done after 5 loops!`);
-  };
+  //nothing yet
   return (
     <div
       className="bg-gradient h-screen max-[700px]:h-fit max-[700px]:pb-56 relative responsive-px pt-28  overflow-hidden"
@@ -39,9 +32,7 @@ const Hero = () => {
               // cursorStyle="_"
               typeSpeed={70}
               deleteSpeed={70}
-              delaySpeed={1000}
-              onLoopDone={handleDone}
-              onType={handleType}
+              delaySpeed={2000}
             />
           </span>
         </motion.h1>
@@ -62,24 +53,7 @@ const Hero = () => {
           className="lg:px-36 py-3 transition-all hover:bg-primary lg:w-fit w-full border-primary border rounded "
         />
       </div>
-      {/* <div className="image absolute 2xl:-right-[20%] 2xl:-bottom-[5%] hidden lg:block bg-transparent -bottom-1/2 -right-1/3">
-        <Image
-          src={watermark}
-          alt="the watermark"
-          sizes="100vw"
-          draggable={false}
-          placeholder="blur"
-        />
-      </div> */}
       <WaterMark />
-      {/* <div className="image absolute top-20 right-0 block lg:hidden">
-        <Image
-          src="/Images/sd-watermark.png"
-          alt="the watermark"
-          width={124}
-          height={142}
-        />{" "}
-      </div> */}
       <div className="image absolute bottom-9">
         <p className="text-base text-white">
           5 Happy Clients{" "}
