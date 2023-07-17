@@ -36,7 +36,7 @@ const WaterMark = () => {
   };
 
   const boxArray = Array.from({ length: numBoxes }).map((_, index) => (
-    <div key={index} className="flex-grow gap-16 flex flex-col">
+    <div key={index} className="flex-grow gap-16 flex flex-col overflow-hidden">
       {Array.from({ length: 100 }).map((_, index) => (
         <motion.div
           key={index}
@@ -48,7 +48,7 @@ const WaterMark = () => {
           )}
           initial="hidden"
           animate="show"
-          className="w-10 h-10 bg-white/50 bg-random"
+          className="w-10 h-10 bg-white/50 bg-random hover:w-11 hover:h-11 duration-300 hover:shadow-lg"
         ></motion.div>
       ))}
     </div>
