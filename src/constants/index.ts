@@ -544,11 +544,6 @@ export const useDevelpers = () => {
                 link: "https://github.com/zenith-noble01",
                 icon: BsGithub,
               },
-              {
-                name: "youtube",
-                link: "https://youtube.com/@codeenv",
-                icon: BsGithub,
-              },
             ],
           },
         ],

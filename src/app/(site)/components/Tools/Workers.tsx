@@ -17,6 +17,7 @@ const Workers: React.FC = () => {
                 role={person.role}
                 key={index}
                 image={person.image}
+                links={person.links}
               />
             ))}
           </div>
