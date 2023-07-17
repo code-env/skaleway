@@ -48,11 +48,9 @@ const Hero = () => {
           animate="show"
           className="lg:text-xl max-[600px]:text-sm"
         >
-          Lorem ipsum dolor sit amet consectetur. Ultrices duis et id{" "}
-          <br className="lg:block hidden" />
-          tempus. Orci odio in sed id mauris a mattis amet. Mi dui habitant{" "}
-          <br className="lg:block hidden" />
-          maecenas condimentum mauris sit netus nunc.{" "}
+          Transforming Ideas into Digital Success Stories - <br /> Crafting
+          Engaging Websites & Powerful Web Applications <br /> for Small
+          Businesses
         </motion.p>
         <Button
           label="Get to Us"
