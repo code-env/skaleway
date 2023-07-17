@@ -43,7 +43,7 @@ const Worker: React.FC<workerProps> = ({ image, name, role, links }) => {
               const Icon = link.icon;
 
               return (
-                <Link href={link.link} target="_blank">
+                <Link href={link.link} target="_blank" key={index}>
                   <Icon className="text-white" size={20} />
                 </Link>
               );
