@@ -39,9 +39,7 @@ const Hero = () => {
               // cursorStyle="_"
               typeSpeed={70}
               deleteSpeed={70}
-              delaySpeed={1000}
-              onLoopDone={handleDone}
-              onType={handleType}
+              delaySpeed={2000}
             />
           </span>
         </motion.h1>
