@@ -2,26 +2,30 @@ import { useMemo } from "react";
 import { BiPhoneCall } from "react-icons/bi";
 import { CiMail } from "react-icons/ci";
 import { FaLocationDot } from "react-icons/fa6";
+
+import {
+  BsGithub,
+  BsLinkedin,
+  BsTwitter,
+  BsFacebook,
+  BsInstagram,
+} from "react-icons/bs";
+import { FaFigma } from "react-icons/fa";
+
 import {
   css,
-  elisha,
   figma,
   html,
   illustrator,
   indesign,
   javascript,
-  josias,
-  kingmark,
   nextjs,
   nodejs,
-  philemon,
   photoshop,
   react,
-  romaric,
   terminal,
   typescript,
   vscode,
-  zenith,
 } from "../../public/Images";
 
 export const useHeaderRoutes = () => {
@@ -63,31 +67,25 @@ export const useTruties = () => {
     () => [
       {
         name: "Dream House",
-        path: "/Images/sponsors/dreamhouse.png",
+        path: "/Images/sponsors/dreamhouse.jpeg",
         height: 57,
         width: 178,
       },
       {
         name: "Tic Foundation",
-        path: "/Images/sponsors/tic.png",
+        path: "/Images/sponsors/tic.jpeg",
         height: 60,
         width: 170,
       },
       {
-        name: "Dk Group",
-        path: "/Images/sponsors/dk.png",
-        height: 50,
-        width: 151,
-      },
-      {
         name: "Ket Academy",
-        path: "/Images/sponsors/ket.png",
+        path: "/Images/sponsors/ket.jpeg",
         height: 61,
         width: 91,
       },
       {
         name: "Swims",
-        path: "/Images/sponsors/swims.png",
+        path: "/Images/sponsors/swims.jpeg",
         height: 63,
         width: 161,
       },
@@ -382,23 +380,28 @@ export const useDevelpers = () => {
             links: [
               {
                 name: "Linkedin",
-                link: "https://linkedin.com/in/",
-                icon: "",
+                link: " https://www.linkedin.com/in/philemon-tebo-tebo-a25b28247/",
+                icon: BsLinkedin,
               },
               {
                 name: "Twitter",
-                link: "https://twitter.com/",
-                icon: "",
+                link: "https://twitter.com/Philtebotebo",
+                icon: BsTwitter,
               },
               {
                 name: "facebook",
-                link: "https://facebook.com/",
-                icon: "",
+                link: "https://www.facebook.com/profile.php?id=100080292745855",
+                icon: BsFacebook,
+              },
+              {
+                name: "instagram",
+                link: "https://www.instagram.com/philtebo/",
+                icon: BsInstagram,
               },
               {
                 name: "figma",
-                link: "https://figma.com/",
-                icon: "",
+                link: "https://figma.com/@philballer",
+                icon: FaFigma,
               },
             ],
           },
@@ -409,23 +412,23 @@ export const useDevelpers = () => {
             links: [
               {
                 name: "Linkedin",
-                link: "https://linkedin.com/in/",
-                icon: "",
+                link: "https://www.linkedin.com/in/ghany-elisha",
+                icon: BsLinkedin,
               },
               {
                 name: "Twitter",
                 link: "https://twitter.com/",
-                icon: "",
+                icon: BsTwitter,
               },
               {
                 name: "facebook",
-                link: "https://facebook.com/",
-                icon: "",
+                link: "https://www.facebook.com/ghany.elisha",
+                icon: BsFacebook,
               },
               {
-                name: "figma",
-                link: "https://figma.com/",
-                icon: "",
+                name: "instagram",
+                link: "https://www.instagram.com/ghanyelisha/ ",
+                icon: BsInstagram,
               },
             ],
           },
@@ -436,23 +439,18 @@ export const useDevelpers = () => {
             links: [
               {
                 name: "Linkedin",
-                link: "https://linkedin.com/in/",
-                icon: "",
+                link: "https://www.linkedin.com/in/royal-designs-a23134261",
+                icon: BsLinkedin,
               },
               {
-                name: "Twitter",
-                link: "https://twitter.com/",
-                icon: "",
+                name: "Instagram",
+                link: "https://www.instagram.com/royal_designs56?r=nametag",
+                icon: BsTwitter,
               },
               {
                 name: "facebook",
-                link: "https://facebook.com/",
-                icon: "",
-              },
-              {
-                name: "figma",
-                link: "https://figma.com/",
-                icon: "",
+                link: "https://www.facebook.com/profile.php?id=100077415955538",
+                icon: BsFacebook,
               },
             ],
           },
@@ -469,27 +467,17 @@ export const useDevelpers = () => {
               {
                 name: "Linkedin",
                 link: "https://linkedin.com/in/",
-                icon: "",
-              },
-              {
-                name: "Twitter",
-                link: "https://twitter.com/",
-                icon: "",
+                icon: BsLinkedin,
               },
               {
                 name: "facebook",
                 link: "https://facebook.com/",
-                icon: "",
-              },
-              {
-                name: "figma",
-                link: "https://figma.com/",
-                icon: "",
+                icon: BsFacebook,
               },
               {
                 name: "github",
                 link: "https://github.com/",
-                icon: "",
+                icon: BsGithub,
               },
             ],
           },
@@ -500,28 +488,29 @@ export const useDevelpers = () => {
             links: [
               {
                 name: "Linkedin",
-                link: "https://linkedin.com/in/",
-                icon: "",
+                link: "https://www.linkedin.com/in/josias-aurel/",
+                icon: BsLinkedin,
               },
               {
                 name: "Twitter",
-                link: "https://twitter.com/",
-                icon: "",
+                link: " https://twitter.com/JosiasWing",
+                icon: BsTwitter,
               },
               {
                 name: "facebook",
-                link: "https://facebook.com/",
-                icon: "",
+                link: "https://www.facebook.com/josiaswing",
+                icon: BsFacebook,
               },
               {
-                name: "figma",
-                link: "https://figma.com/",
-                icon: "",
+                name: "instagram",
+                link: "https://www.instagram.com/josias_wing/",
+                icon: BsInstagram,
               },
+
               {
                 name: "github",
-                link: "https://github.com/",
-                icon: "",
+                link: "https://github.com/JosiasAurel",
+                icon: BsGithub,
               },
             ],
           },
@@ -532,28 +521,28 @@ export const useDevelpers = () => {
             links: [
               {
                 name: "Linkedin",
-                link: "https://linkedin.com/in/",
-                icon: "",
+                link: "https://www.linkedin.com/in/codeenv",
+                icon: BsLinkedin,
               },
               {
                 name: "Twitter",
-                link: "https://twitter.com/",
-                icon: "",
+                link: "https://twitter.com/zenith_noble01",
+                icon: BsTwitter,
               },
               {
                 name: "facebook",
-                link: "https://facebook.com/",
-                icon: "",
+                link: "https://www.facebook.com/zenithnoble01",
+                icon: BsFacebook,
               },
               {
-                name: "figma",
-                link: "https://figma.com/",
-                icon: "",
+                name: "instagram",
+                link: "https://www.instagram.com/code_env/",
+                icon: BsInstagram,
               },
               {
                 name: "github",
-                link: "https://github.com/",
-                icon: "",
+                link: "https://github.com/zenith-noble01",
+                icon: BsGithub,
               },
             ],
           },

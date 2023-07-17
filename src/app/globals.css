@@ -79,13 +79,31 @@ html {
   height: calc(100vh - 80px);
 }
 
-.worker-overlay:hover::after {
-  content: "";
+.worker-overlay {
+  position: relative;
+}
+
+.worker-overlay .show {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
-  /* grid-template-rows: ; */
-  background-color: red;
-  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: 0.3s ease-in-out;
+  gap: 0.5rem;
+}
+
+.worker-overlay:hover .show {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
 }
 
 .projects {
