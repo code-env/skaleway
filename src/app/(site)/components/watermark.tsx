@@ -36,7 +36,7 @@ const WaterMark = () => {
   };
 
   const boxArray = Array.from({ length: numBoxes }).map((_, index) => (
-    <div key={index} className="flex-grow gap-8 flex flex-col">
+    <div key={index} className="flex-grow gap-16 flex flex-col">
       {Array.from({ length: 100 }).map((_, index) => (
         <motion.div
           key={index}
@@ -64,7 +64,7 @@ const WaterMark = () => {
       }}
       className="absolute hidden lg:flex top-1/2 transform -translate-y-1/2 translate-x-[40%] right-0 -rotate-45"
     >
-      <div className="flex h-full flex-1 flex-wrap gap-8 overflow-hidden">
+      <div className="flex h-full flex-1 flex-wrap gap-16 overflow-hidden">
         {boxArray}
       </div>
     </div>

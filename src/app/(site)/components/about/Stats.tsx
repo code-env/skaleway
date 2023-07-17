@@ -7,7 +7,8 @@ const Stats = () => {
     <div className="w-full  flex gap-8 max-[700px]:flex-col items-end">
       <div className="flex-1 ">
         <h1 className="text-[72px] font-inter font-bold text-secondary max-[700px]:text-4xl">
-          Grow Your Business with Our Agency
+          Grow Your <span className="text-primary">Business</span> with Our{" "}
+          <span className="text-primary">Agency</span>
         </h1>
       </div>
       <div className="flex-1 relative">
