@@ -34,11 +34,11 @@ const Hero = () => {
           <span className="text-primary">
             <Typewriter
               words={["Eat", "Sleep", "Code", "Repeat!"]}
-              loop={5}
-              cursor
-              cursorStyle="_"
+              loop={true}
+              // cursor
+              // cursorStyle="_"
               typeSpeed={70}
-              deleteSpeed={50}
+              deleteSpeed={70}
               delaySpeed={1000}
               onLoopDone={handleDone}
               onType={handleType}
