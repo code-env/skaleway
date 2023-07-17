@@ -4,24 +4,18 @@ import { CiMail } from "react-icons/ci";
 import { FaLocationDot } from "react-icons/fa6";
 import {
   css,
-  elisha,
   figma,
   html,
   illustrator,
   indesign,
   javascript,
-  josias,
-  kingmark,
   nextjs,
   nodejs,
-  philemon,
   photoshop,
   react,
-  romaric,
   terminal,
   typescript,
   vscode,
-  zenith,
 } from "../../public/Images";
 
 export const useHeaderRoutes = () => {
@@ -63,31 +57,25 @@ export const useTruties = () => {
     () => [
       {
         name: "Dream House",
-        path: "/Images/sponsors/dreamhouse.png",
+        path: "/Images/sponsors/dreamhouse.jpeg",
         height: 57,
         width: 178,
       },
       {
         name: "Tic Foundation",
-        path: "/Images/sponsors/tic.png",
+        path: "/Images/sponsors/tic.jpeg",
         height: 60,
         width: 170,
       },
       {
-        name: "Dk Group",
-        path: "/Images/sponsors/dk.png",
-        height: 50,
-        width: 151,
-      },
-      {
         name: "Ket Academy",
-        path: "/Images/sponsors/ket.png",
+        path: "/Images/sponsors/ket.jpeg",
         height: 61,
         width: 91,
       },
       {
         name: "Swims",
-        path: "/Images/sponsors/swims.png",
+        path: "/Images/sponsors/swims.jpeg",
         height: 63,
         width: 161,
       },
