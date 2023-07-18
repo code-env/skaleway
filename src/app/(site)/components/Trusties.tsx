@@ -26,7 +26,10 @@ const Trusties = () => {
             className="trusties flex  w-full justify-between flex-wrap items-center"
           >
             {trustiesRepeated.map((item, index) => (
-              <div key={index} className="">
+              <div
+                key={index}
+                className="grayscale  hover:grayscale-0 duration-300 transition-all cursor-pointer"
+              >
                 <Image
                   src={item.path}
                   alt={item.name}

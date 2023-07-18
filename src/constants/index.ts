@@ -67,25 +67,25 @@ export const useTruties = () => {
     () => [
       {
         name: "Dream House",
-        path: "/Images/sponsors/dreamhouse.jpeg",
+        path: "/Images/sponsors/dreamhouse.png",
         height: 57,
         width: 178,
       },
       {
         name: "Tic Foundation",
-        path: "/Images/sponsors/tic.jpeg",
+        path: "/Images/sponsors/tic.png",
         height: 60,
         width: 170,
       },
       {
         name: "Ket Academy",
-        path: "/Images/sponsors/ket.jpeg",
+        path: "/Images/sponsors/ket.png",
         height: 61,
         width: 91,
       },
       {
         name: "Swims",
-        path: "/Images/sponsors/swims.jpeg",
+        path: "/Images/sponsors/swims.png",
         height: 63,
         width: 161,
       },
