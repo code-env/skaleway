@@ -12,7 +12,7 @@ const Logo: React.FC = () => {
           alt="Skaleway logo"
           width={100}
           height={100}
-          placeholder="blur"
+          // placeholder="blur"
         />
       </Link>
     </div>
