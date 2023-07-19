@@ -44,7 +44,7 @@ const WaterMark = () => {
             { direction: "down" },
             { type: "spring" },
             0,
-            index * 1
+            index * 0.5
           )}
           initial="hidden"
           animate="show"
