@@ -1,17 +1,16 @@
-import Layers from "@/components/Layers";
+"use client";
+
 import React from "react";
 
 const AsTeam = () => {
   return (
     <div className="w-full  flex gap-8 max-[700px]:flex-col">
-      <div className="flex-1">
-        <Layers className="h-[330px] w-full" />
-      </div>
+      <div className="flex-1 max-w-[50%] bg-neutral rounded-lg relative"></div>
       <div className="flex-1">
         <h1 className="text-2xl font-inter font-medium text-secondary text-center">
           Skaleway as a Team
         </h1>
-        <p className="text-xl font-inter leading-[170%] text-center max-[700px]:text-start max-[700px]:text-xs">
+        <p className="text-xl font-inter leading-[170%]  max-[700px]:text-xs">
           Lorem ipsum dolor sit amet consectetur. Fames ac nec aenean lectus
           turpis. Mi condimentum varius est at quis non nisi. Elementum laoreet
           proin sit convallis tellus. Id ac diam at a arcu ac nec sagittis

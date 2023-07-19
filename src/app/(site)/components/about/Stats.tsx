@@ -11,7 +11,7 @@ const Stats = () => {
           <span className="text-primary">Agency</span>
         </h1>
       </div>
-      <div className="flex-1 relative">
+      <div className="flex-1 relative  mb-2">
         <Image
           src={analytics}
           alt="skaleway analytics"
