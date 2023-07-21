@@ -3,7 +3,7 @@
 import { useTruties } from "@/constants";
 import Image from "next/image";
 import React from "react";
-import { motion } from "framer-motion";
+import Marquee from "./marquee";
 
 const Trusties = () => {
   const trusties = useTruties();
@@ -11,20 +11,12 @@ const Trusties = () => {
   return (
     <div className="responsive-px">
       <div className="flex w-full flex-col gap-7">
-        <h1 className="font-sans text-[32px] text-secondary">They Trust Us</h1>
+        <h1 className="font-sans text-[32px] text-secondary text-center">
+          They Trust Us
+        </h1>
 
         <div className="trusties-container flex w-full justify-between overflow-hidden">
-          <motion.div
-            animate={{
-              x: [0, 400, 0],
-            }}
-            transition={{
-              duration: 0,
-              repeat: Infinity,
-              repeatType: "loop",
-            }}
-            className="trusties flex  w-full justify-between flex-wrap items-center"
-          >
+          <Marquee>
             {trustiesRepeated.map((item, index) => (
               <div
                 key={index}
@@ -39,7 +31,7 @@ const Trusties = () => {
                 />
               </div>
             ))}
-          </motion.div>
+          </Marquee>
         </div>
       </div>
       <style jsx>{`

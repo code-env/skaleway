@@ -7,10 +7,12 @@ import About from "./components/about/About";
 import Tools from "./components/Tools/Tools";
 import Analytics from "./components/Analytics/Analytics";
 import Contact from "./components/contact/Contact";
+import Header from "@/components/Header/Header";
 
 const LandingPage = () => {
   return (
     <div className=" flex flex-col gap-20">
+      <Header />
       <Hero />
       <Trusties />
       <Services />

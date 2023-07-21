@@ -57,7 +57,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <body className="font-inter">
-        <Header />
+        {/* <Header /> */}
         {children}
         <Footer />
       </body>
