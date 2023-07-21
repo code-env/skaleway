@@ -5,7 +5,7 @@ import { HiBell } from "react-icons/hi";
 
 const Header = () => {
   return (
-    <div className="h-20 w-full  items-center flex gap-8 shadow-sm text-gray-400 px-10">
+    <div className="h-20 w-full  items-center flex gap-8 shadow-sm text-gray-400 px-10 sticky top-0 bg-white">
       <div className="flex items-center flex-1 gap-4  ">
         <BiSearch size={20} />
         <input
