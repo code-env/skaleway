@@ -40,7 +40,7 @@ const Messaging = () => {
 
   return (
     <div className="flex w-full  gap-8 max-[700px]:flex-col">
-      <div className="bg-white shadow-lg p-8 rounded-lg w-[70%] mx-auto flex flex-col gap-[17px]">
+      <div className="bg-white shadow-lg p-8 rounded-lg w-[95%] lg:w-[70%] mx-auto flex flex-col gap-[17px]">
         <div className="flex flex-col gap-1">
           <p className="font-inter text-2xl font-bold">Enquiry Form</p>
           <p className="text-gray-500">
