@@ -54,8 +54,6 @@ const WaterMark = () => {
     </div>
   ));
 
-  console.log(getRandomColor());
-
   return (
     <div
       style={{
