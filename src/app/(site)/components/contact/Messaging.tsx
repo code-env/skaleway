@@ -44,8 +44,8 @@ const Messaging = () => {
         <div className="flex flex-col gap-1">
           <p className="font-inter text-2xl font-bold">Enquiry Form</p>
           <p className="text-gray-500">
-            Are you looking for details about a certain property? Ask us a
-            question using the form below.
+            Are you looking for details about a certain design or development?
+            Ask us a question using the form below.
           </p>
         </div>
         <Form onSubmit={handleSubmit}>

@@ -1,6 +1,7 @@
 import "./globals.css";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header/Header";
+import { ClerkProvider } from "@clerk/nextjs";
 
 import { Metadata } from "next";
 
@@ -55,12 +56,14 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="en">
-      <body className="font-inter">
-        {/* <Header /> */}
-        {children}
-        <Footer />
-      </body>
-    </html>
+    <ClerkProvider>
+      <html lang="en">
+        <body className="font-inter">
+          {/* <Header /> */}
+          {children}
+          <Footer />
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }
