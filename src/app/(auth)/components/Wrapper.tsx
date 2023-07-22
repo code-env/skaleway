@@ -1,10 +1,10 @@
 "use client";
 
 import React from "react";
-import { SignUp } from "@clerk/nextjs";
+import { UserProfile } from "@clerk/nextjs";
 
 const Wrapper = () => {
-  return <SignUp />;
+  return <UserProfile />;
 };
 
 export default Wrapper;
