@@ -23,6 +23,7 @@ const Input: React.FC<InputProps> = ({
         <textarea
           placeholder={placeholder}
           name={name}
+          onChange={onChange}
           className="w-full border outline-none px-4 py-3 rounded focus:border-primary resize-none transition-all h-[150px] duration-300"
         />
       ) : (
