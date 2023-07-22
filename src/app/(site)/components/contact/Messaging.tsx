@@ -41,7 +41,7 @@ const Messaging = () => {
       <div className="bg-white shadow-lg p-8 rounded-lg w-[70%] mx-auto flex flex-col gap-[17px]">
         <div className="flex flex-col gap-1">
           <p className="font-inter text-2xl font-bold">Enquiry Form</p>
-          <p>
+          <p className="text-gray-500">
             Are you looking for details about a certain property? Ask us a
             question using the form below.
           </p>
@@ -69,7 +69,7 @@ const Messaging = () => {
           />
           <Input
             name="message"
-            placeholder="Message"
+            placeholder="Comments of questions"
             onChange={handleOnChange}
             textarea
             value={message}
