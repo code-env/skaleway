@@ -216,8 +216,8 @@ export const useDevTools = () => {
           {
             name: "nextjs",
             icon: nextjs,
-            width: 254,
-            height: 51,
+            width: 80,
+            height: 80,
           },
           {
             name: "terminal",
