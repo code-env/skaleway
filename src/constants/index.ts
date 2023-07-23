@@ -70,24 +70,28 @@ export const useTruties = () => {
         path: "/Images/sponsors/dreamhouse.png",
         height: 57,
         width: 178,
+        url: null
       },
       {
         name: "Tic Foundation",
         path: "/Images/sponsors/tic.png",
         height: 60,
         width: 170,
+        url: "https://tic-foundation.org/"
       },
       {
         name: "Ket Academy",
         path: "/Images/sponsors/ket.png",
         height: 61,
         width: 91,
+        url: "https://ket-academy.github.io/"
       },
       {
         name: "Swims",
         path: "/Images/sponsors/swims.png",
         height: 63,
         width: 161,
+        url: "https://www.swimscompany.com/"
       },
     ],
     []

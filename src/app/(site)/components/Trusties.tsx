@@ -16,7 +16,8 @@ const Trusties = () => {
         </h1>
 
         <div className="trusties-container flex w-full justify-between overflow-hidden">
-          <Marquee>
+          {/*
+<Marquee>
             {trustiesRepeated.map((item, index) => (
               <div
                 key={index}
@@ -32,6 +33,33 @@ const Trusties = () => {
               </div>
             ))}
           </Marquee>
+          */}
+          
+{trustiesRepeated.map((item, index) => (
+              <div
+                key={index}
+                className="duration-300 transition-all cursor-pointer"
+              >
+                {item.url ? <a href={item.url} target="_black">
+<Image
+                  src={item.path}
+                  alt={item.name}
+                  height={item.height}
+                  width={item.width}
+                  draggable={false}
+                />
+                </a> : 
+<Image
+                  src={item.path}
+                  alt={item.name}
+                  height={item.height}
+                  width={item.width}
+                  draggable={false}
+                />
+                }
+                
+              </div>
+            ))}
         </div>
       </div>
       <style jsx>{`
