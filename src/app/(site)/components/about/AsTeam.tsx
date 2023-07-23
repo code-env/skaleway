@@ -11,13 +11,7 @@ const AsTeam = () => {
           Skaleway as a Team
         </h1>
         <p className="text-xl font-inter leading-[170%]  max-[700px]:text-xs">
-          Lorem ipsum dolor sit amet consectetur. Fames ac nec aenean lectus
-          turpis. Mi condimentum varius est at quis non nisi. Elementum laoreet
-          proin sit convallis tellus. Id ac diam at a arcu ac nec sagittis
-          dolor. Elit risus in ultrices quis netus aenean habitant. Pharetra
-          pretium sociis dolor leo dolor in purus. Suspendisse gravida id velit
-          neque. Id viverra iaculis cursus at congue adipiscing dictum massa.
-          Sed neque rhoncus massa nunc lacinia. Sed in vitae dolor diam et.{" "}
+        At Skaleway, we believe in collaboration and the power of a team. From the initial idea to the finished product, our design process is rooted in a spirit of teamwork. Every team member brings their unique perspective and skills to the table, and together, we work to create something special. From brainstorming sessions to ideation sessions and finally, to final design reviews, our teamwork helps to create solutions that are both innovative and functional.{" "}
         </p>
       </div>
     </div>

@@ -22,7 +22,7 @@ const Services = () => {
                   {item.name}
                 </p>
 
-                <ul className="list-disc flex flex-col gap-2">
+                <ul className="service-card-list flex flex-col gap-2">
                   {item.elmts.map((item, index) => (
                     <li
                       key={index}
