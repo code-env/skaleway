@@ -27,6 +27,7 @@ export async function POST(request: Request) {
         imageUrl,
         title,
         username: "",
+        userId,
       },
     });
 

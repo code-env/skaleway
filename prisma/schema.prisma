@@ -15,6 +15,7 @@ model Portfolio {
   username  String
   title     String
   imageUrl  String
+  userId    String
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }

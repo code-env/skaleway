@@ -33,11 +33,18 @@ const Create = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const { username, title, image, description } = userData;
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     try {
       setIsLoading(true);
+
+      const response = await fetch("/api/portfolio", {
+        method: "POST",
+        body: "adfadfadfadfadfadnfadnfadfnadjfnajdfnjadfa",
+      });
     } catch (error) {
       console.log("something went wrong while uploading");
     } finally {
@@ -45,12 +52,10 @@ const Create = () => {
     }
   };
 
-  const { username, title, image, description } = userData;
-
   return (
     <Form
       onSubmit={handleSubmit}
-      className="w-1/2 mx-auto  p-4 rounded-lg flex flex-col gap-4"
+      className="lg:w-1/2 mx-auto md:w-[80%] w-[90%] p-4 rounded-lg flex flex-col gap-4"
     >
       <Input
         name="username"
