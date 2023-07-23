@@ -35,6 +35,20 @@ const Create = () => {
 
   const { username, title, image, description } = userData;
 
+  const handleImageChange = (imageUrl: string) => {
+    setUserData((prev) => ({
+      ...prev,
+      image: imageUrl,
+    }));
+  };
+
+  const handleImageRemove = (imageUrl: string) => {
+    setUserData((prev) => ({
+      ...prev,
+      image: null,
+    }));
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
@@ -43,10 +57,21 @@ const Create = () => {
 
       const response = await fetch("/api/portfolio", {
         method: "POST",
-        body: "adfadfadfadfadfadnfadnfadfnadjfnajdfnjadfa",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(userData),
       });
+
+      // Handle the response from the server
+      if (response.ok) {
+        const data = await response.json();
+        console.log("Successfully uploaded portfolio:", data);
+      } else {
+        console.log("Error uploading portfolio:", response.statusText);
+      }
     } catch (error) {
-      console.log("something went wrong while uploading");
+      console.log("Something went wrong while uploading:", error);
     } finally {
       setIsLoading(false);
     }
@@ -69,6 +94,12 @@ const Create = () => {
         onChange={handleChange}
         value={title}
         placeholder="Title"
+        disabled={isLoading}
+      />
+      <ImageUpload
+        onChange={handleImageChange}
+        onRemove={handleImageRemove}
+        value={image ? [image] : []}
         disabled={isLoading}
       />
       <Input

@@ -2,7 +2,7 @@
 
 import { CldUploadWidget } from "next-cloudinary";
 import Image from "next/image";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, FormEvent } from "react";
 import { BiTrash, BiImageAdd } from "react-icons/bi";
 
 interface imageUploaderProps {
@@ -38,10 +38,13 @@ const ImageUpload: React.FC<imageUploaderProps> = ({
         {value.map((url) => (
           <div
             key={url}
-            className="rounded-md w-[200px] h-[200px] overflow-hidden"
+            className="rounded-md w-[200px] h-[200px] overflow-hidden relative"
           >
-            <div className="absolute">
-              <button onClick={() => onRemove(url)}>
+            <div className="absolute top-2 right-2 z-10">
+              <button
+                onClick={() => onRemove(url)}
+                className="bg-rose-500 cursor-pointer p-2 rounded-md text-white"
+              >
                 <BiTrash />
               </button>
             </div>
@@ -49,14 +52,19 @@ const ImageUpload: React.FC<imageUploaderProps> = ({
           </div>
         ))}
       </div>
-      <CldUploadWidget onUpload={onUpload} uploadPreset="">
+      <CldUploadWidget onUpload={onUpload} uploadPreset="skaleway">
         {({ open }) => {
-          const onClick = () => {
+          const onClick = (e: FormEvent) => {
+            e.preventDefault();
             open();
           };
 
           return (
-            <button disabled={disabled} onClick={onClick}>
+            <button
+              disabled={disabled}
+              onClick={onClick}
+              className="flex bg-gray-300 items-center gap-2 p-2 rounded-md"
+            >
               <BiImageAdd size={20} />
               <span>Upload an image</span>
             </button>
