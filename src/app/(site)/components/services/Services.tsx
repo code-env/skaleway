@@ -11,11 +11,11 @@ const Services = () => {
           Our Services
         </h1>
 
-        <div className="services flex w-full gap-8 max-[700px]:flex-col">
+        <div className="services flex w-full gap-8 max-[700px]:flex-col justify-center">
           {services.map((item, index) => (
             <div
               key={index}
-              className="service flex-1 flex flex-col justify-between rounded-[10px] px-16 py-6 gap-4"
+              className="service flex-1 flex flex-col justify-between rounded-[10px] px-10 py-6 gap-4"
             >
               <div className="flex flex-col gap-4">
                 <p className="text-center text-2xl font-semibold">
@@ -26,7 +26,7 @@ const Services = () => {
                   {item.elmts.map((item, index) => (
                     <li
                       key={index}
-                      className="text-xl font-normal leading-[180%] max-[700px]:text-base"
+                      className="text-lg font-normal leading-[180%] max-[700px]:text-base"
                     >
                       {item.name}
                     </li>
