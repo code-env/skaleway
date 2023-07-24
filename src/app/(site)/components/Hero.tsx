@@ -39,10 +39,12 @@ const Hero = () => {
           Engaging Websites & Powerful Web Applications <br /> for Small
           Businesses
         </p>
-        <Button
-          label="Get to Us"
-          className="lg:px-36 py-3 transition-all bg-primary lg:w-fit w-full border-primary border rounded "
-        />
+        <a
+          href="#contact"
+          className="lg:px-36 py-3 transition-all bg-node rounded  lg:w-fit w-full border-primary border hover:bg-primary"
+        >
+          Get to know us
+        </a>
       </div>
       <WaterMark />
       <div className="image absolute bottom-9">
