@@ -1,42 +1,14 @@
 import React from "react";
 import Project from "./Project";
 import Masonry from "react-masonry-css";
+import { Portfolio } from "@prisma/client";
 
 interface projectsProp {
   isActive: boolean;
+  portfolio: Portfolio[];
 }
 
-const Projects: React.FC<projectsProp> = ({ isActive }) => {
-  const projects = [
-    {
-      height: 100,
-    },
-    {
-      height: 200,
-    },
-    {
-      height: 50,
-    },
-    {
-      height: 300,
-    },
-    {
-      height: 400,
-    },
-    {
-      height: 410,
-    },
-    {
-      height: 560,
-    },
-    {
-      height: 310,
-    },
-    {
-      height: 100,
-    },
-  ];
-
+const Projects: React.FC<projectsProp> = ({ isActive, portfolio }) => {
   const breakpointColumnsObj = {
     default: isActive ? 3 : 4,
     1100: 3,
@@ -46,8 +18,8 @@ const Projects: React.FC<projectsProp> = ({ isActive }) => {
 
   return (
     <Masonry className="flex gap-4" breakpointCols={breakpointColumnsObj}>
-      {projects.map((project, index) => (
-        <Project height={project.height} key={index} index={index} />
+      {portfolio.map((project, index) => (
+        <Project key={index} project={project} />
       ))}
     </Masonry>
   );

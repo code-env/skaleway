@@ -12,11 +12,11 @@ datasource db {
 }
 
 model Portfolio {
-  id        String   @id @default(uuid())
-  username  String
-  title     String
-  imageUrl  String
-  userId    String
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  id          String   @id @default(uuid())
+  title       String
+  imageUrl    String
+  userId      String
+  description String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
 }

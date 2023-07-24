@@ -1,7 +1,7 @@
 import "./globals.css";
 import Footer from "@/components/Footer";
-import Header from "@/components/Header/Header";
 import { ClerkProvider } from "@clerk/nextjs";
+import { Toaster } from "sonner";
 
 import { Metadata } from "next";
 
@@ -58,6 +58,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <ClerkProvider>
       <html lang="en">
+        <Toaster />
         <body className="font-inter">
           {/* <Header /> */}
           {children}
