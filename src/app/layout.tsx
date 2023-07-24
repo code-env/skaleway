@@ -10,10 +10,12 @@ export const metadata: Metadata = {
     default: "Skaleway",
     template: "%s | Skaleway",
   },
-  description: "Skaling the way to the future",
+  description:
+    "Transforming Ideas into Digital Success Stories - Crafting Engaging Websites & Powerful Web Applicationsfor Small Businesses",
   openGraph: {
     title: "Skaleway",
-    description: "Skaling the way to the future",
+    description:
+      "Transforming Ideas into Digital Success Stories - Crafting Engaging Websites & Powerful Web Applicationsfor Small Businesses",
     url: "https://skaleway.com",
     siteName: "skaleway.com",
     images: [
