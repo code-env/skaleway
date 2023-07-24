@@ -310,7 +310,7 @@ export const useFooterRoutes = () => {
   const routes = useMemo(
     () => [
       {
-        name: "Usesful Links",
+        name: "Useful Links",
         links: [
           {
             name: "Home",
@@ -421,7 +421,7 @@ export const useDevelpers = () => {
               },
               {
                 name: "Twitter",
-                link: "https://twitter.com/",
+                link: "https://twitter.com/GhanyElisha",
                 icon: BsTwitter,
               },
               {
@@ -470,17 +470,12 @@ export const useDevelpers = () => {
             links: [
               {
                 name: "Linkedin",
-                link: "https://linkedin.com/in/",
+                link: "https://www.linkedin.com/in/Romaric-lonfonyuy/",
                 icon: BsLinkedin,
               },
               {
-                name: "facebook",
-                link: "https://facebook.com/",
-                icon: BsFacebook,
-              },
-              {
                 name: "github",
-                link: "https://github.com/",
+                link: "https://github.com/Romaric250",
                 icon: BsGithub,
               },
             ],

@@ -4,7 +4,7 @@ import React from "react";
 import "./style.css";
 
 const page = () => {
-  return <div>{/* <Projects /> */}</div>;
+  return <div className="">testing route</div>;
 };
 
 export default page;

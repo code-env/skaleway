@@ -1,20 +1,15 @@
 "use client";
 
 import { useHeaderRoutes } from "@/constants";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import NavItem from "./NavItem";
 import Logo from "../Logo";
-import { useParams, usePathname } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { Example } from "../HambugerMenu/Meny";
 
 const Header = () => {
   const routes = useHeaderRoutes();
   const pathname = usePathname();
-  const params = useParams();
-
-  useEffect(() => {
-    console.log(params);
-  }, []);
 
   const [bgColor, setBgColor] = useState(false);
 

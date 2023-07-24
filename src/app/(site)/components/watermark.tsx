@@ -1,6 +1,4 @@
 import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
-import { slideIn } from "@/utils/motion";
 
 interface DeviceSize {
   width: number;
@@ -38,23 +36,13 @@ const WaterMark = () => {
   const boxArray = Array.from({ length: numBoxes }).map((_, index) => (
     <div key={index} className="flex-grow gap-16 flex flex-col overflow-hidden">
       {Array.from({ length: 100 }).map((_, index) => (
-        <motion.div
+        <div
           key={index}
-          variants={slideIn(
-            { direction: "down" },
-            { type: "spring" },
-            0,
-            index * 0.5
-          )}
-          initial="hidden"
-          animate="show"
           className="w-10 h-10 bg-white/50 bg-random hover:w-11 hover:h-11 duration-300 hover:shadow-lg"
-        ></motion.div>
+        ></div>
       ))}
     </div>
   ));
-
-  console.log(getRandomColor());
 
   return (
     <div
