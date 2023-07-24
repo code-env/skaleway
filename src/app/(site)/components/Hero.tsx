@@ -32,9 +32,8 @@ const Hero = () => {
               delaySpeed={2000}
             />
           </span>
+        </h1>
 
-        </motion.h1>
-    
         <p className="lg:text-xl max-[600px]:text-sm">
           Transforming Ideas into Digital Success Stories - <br /> Crafting
           Engaging Websites & Powerful Web Applications <br /> for Small
