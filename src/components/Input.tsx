@@ -8,6 +8,8 @@ interface InputProps {
   placeholder: string;
   textarea?: boolean;
   value: string;
+  type?: string;
+  disabled?: boolean;
 }
 
 const Input: React.FC<InputProps> = ({
@@ -16,6 +18,8 @@ const Input: React.FC<InputProps> = ({
   placeholder,
   textarea,
   value,
+  type,
+  disabled,
 }) => {
   return (
     <div className="w-full">
@@ -23,13 +27,19 @@ const Input: React.FC<InputProps> = ({
         <textarea
           placeholder={placeholder}
           name={name}
-          className="w-full border outline-none px-4 py-3 rounded focus:border-primary resize-none transition-all h-[150px] duration-300"
+          onChange={onChange}
+          className={`${
+            disabled && "cursor-not-allowed"
+          } w-full border outline-none px-4 py-3 rounded focus:border-primary resize-none transition-all h-[150px] duration-300`}
         />
       ) : (
         <input
           placeholder={placeholder}
+          type={type ? type : "text"}
           name={name}
-          className="w-full border outline-none px-4 py-3 rounded focus:border-primary transition-all duration-300"
+          className={`${
+            disabled && "cursor-not-allowed"
+          } w-full border outline-none px-4 py-3 rounded focus:border-primary transition-all duration-300`}
           onChange={onChange}
           value={value}
         />

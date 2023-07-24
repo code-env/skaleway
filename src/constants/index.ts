@@ -306,7 +306,7 @@ export const useFooterRoutes = () => {
   const routes = useMemo(
     () => [
       {
-        name: "Usesful Links",
+        name: "Useful Links",
         links: [
           {
             name: "Home",
