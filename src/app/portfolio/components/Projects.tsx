@@ -21,7 +21,7 @@ const Projects: React.FC<projectsProp> = ({ isActive, portfolio }) => {
       className="flex gap-4 overflow-hidden"
       breakpointCols={breakpointColumnsObj}
     >
-      {portfolio.map((project, index) => (
+      {portfolio?.map((project, index) => (
         <Project key={index} project={project} />
       ))}
     </Masonry>
