@@ -32,7 +32,9 @@ const Hero = () => {
               delaySpeed={2000}
             />
           </span>
-        </h1>
+
+        </motion.h1>
+    
         <p className="lg:text-xl max-[600px]:text-sm">
           Transforming Ideas into Digital Success Stories - <br /> Crafting
           Engaging Websites & Powerful Web Applications <br /> for Small
@@ -40,7 +42,7 @@ const Hero = () => {
         </p>
         <Button
           label="Get to Us"
-          className="lg:px-36 py-3 transition-all hover:bg-primary lg:w-fit w-full border-primary border rounded "
+          className="lg:px-36 py-3 transition-all bg-primary lg:w-fit w-full border-primary border rounded "
         />
       </div>
       <WaterMark />

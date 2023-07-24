@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import skaleway from "../../public/Images/logo.png";
+import skaleway from "../../public/Images/logo.svg";
 import Link from "next/link";
 
 const Logo: React.FC = () => {

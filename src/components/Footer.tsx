@@ -22,7 +22,7 @@ const Footer = () => {
           {footerRoutes.map((item, index) => (
             <div key={index} className="flex flex-col gap-2">
               <p className="font-bold text-2xl">{item.name}</p>
-              <ul className="list-disc mx-7 leading-[160%]">
+              <ul className="mx-7 leading-[160%]">
                 {item.links.map((link: links, index) => (
                   <li
                     key={index}
@@ -40,12 +40,12 @@ const Footer = () => {
           ))}
           <div className="flex flex-col gap-2">
             <p className="font-bold text-2xl">Contact</p>
-            <ul className="">
+            <ul className="mx-7">
               <li className="font-sans font-normal text-white/80">
-                Mail: contact@skaleway.com
+                Mail: <a href="mailto:contact@skaleway.com">contact@skaleway.com</a> 
               </li>
               <li className="font-sans font-normal text-white/80 ">
-                Phone: 6 54 58 46 24
+                Phone: <a href="tel:54584624">6 54 58 46 24</a> 
               </li>
             </ul>
           </div>

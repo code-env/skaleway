@@ -109,3 +109,19 @@ html {
 .projects {
   grid-template-rows: masonry !important;
 }
+
+li:has(+ a) {
+  color: blue;
+}
+
+footer li {
+  margin-left: -25px;
+}
+
+.service-card-list {
+  list-style-type: none;
+}
+
+.service-card-list li::before {
+  content: "✅ "
+}
