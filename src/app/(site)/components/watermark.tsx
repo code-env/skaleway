@@ -1,7 +1,4 @@
 import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
-import { slideIn } from "@/utils/motion";
-import { IndexKind } from "typescript";
 
 interface DeviceSize {
   width: number;
