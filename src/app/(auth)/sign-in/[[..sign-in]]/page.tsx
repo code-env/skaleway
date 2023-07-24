@@ -1,13 +1,10 @@
 import React from "react";
-import { SignUp } from "@clerk/nextjs";
-
-
-
+import { SignIn } from "@clerk/nextjs";
 
 const Auth = () => {
   return (
     <div className="min-h-screen flex items-center justify-center">
-      <SignUp />
+      <SignIn />
     </div>
   );
 };

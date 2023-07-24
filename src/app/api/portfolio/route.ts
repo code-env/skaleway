@@ -46,11 +46,11 @@ export async function GET() {
   try {
     const portfolio = await prismadb.portfolio.findMany({
       orderBy: {
-        createdAt: "asc",
+        createdAt: "desc",
       },
     });
 
-    console.log(portfolio);
+    // console.log(portfolio);
 
     return NextResponse.json(portfolio);
   } catch (error: any) {
