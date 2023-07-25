@@ -121,7 +121,8 @@ footer li {
 .service-card-list {
   list-style-type: none;
 }
-
+/*
 .service-card-list li::before {
-  content: "✅ "
+  content: "✔️ "
 }
+*/
