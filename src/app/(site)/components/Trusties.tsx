@@ -15,52 +15,36 @@ const Trusties = () => {
           They Trust Us
         </h1>
 
-        <div className="trusties-container flex w-full justify-between overflow-hidden">
-          {/*
-<Marquee>
+        <marquee>
+          <div className="trusties-container flex w-full justify-between overflow-hidden">
             {trustiesRepeated.map((item, index) => (
-              <div
-                key={index}
-                className="grayscale  hover:grayscale-0 duration-300 transition-all cursor-pointer"
-              >
-                <Image
-                  src={item.path}
-                  alt={item.name}
-                  height={item.height}
-                  width={item.width}
-                  draggable={false}
-                />
-              </div>
-            ))}
-          </Marquee>
-          */}
-          
-{trustiesRepeated.map((item, index) => (
               <div
                 key={index}
                 className="duration-300 transition-all cursor-pointer"
               >
-                {item.url ? <a href={item.url} target="_black">
-<Image
-                  src={item.path}
-                  alt={item.name}
-                  height={item.height}
-                  width={item.width}
-                  draggable={false}
-                />
-                </a> : 
-<Image
-                  src={item.path}
-                  alt={item.name}
-                  height={item.height}
-                  width={item.width}
-                  draggable={false}
-                />
-                }
-                
+                {item.url ? (
+                  <a href={item.url} target="_black">
+                    <Image
+                      src={item.path}
+                      alt={item.name}
+                      height={item.height}
+                      width={item.width}
+                      draggable={false}
+                    />
+                  </a>
+                ) : (
+                  <Image
+                    src={item.path}
+                    alt={item.name}
+                    height={item.height}
+                    width={item.width}
+                    draggable={false}
+                  />
+                )}
               </div>
             ))}
-        </div>
+          </div>
+        </marquee>
       </div>
       <style jsx>{`
         .trusties-container {
