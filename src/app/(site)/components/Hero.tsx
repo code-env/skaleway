@@ -41,7 +41,7 @@ const Hero = () => {
         </p>
         <a
           href="#contact"
-          className="lg:px-36 py-3 transition-all bg-node rounded  lg:w-fit w-full border-primary border hover:bg-primary"
+          className="lg:px-36 py-3 transition-all bg-node rounded  lg:w-fit w-full border-primary border hover:bg-primary text-center"
         >
           Get to know us
         </a>

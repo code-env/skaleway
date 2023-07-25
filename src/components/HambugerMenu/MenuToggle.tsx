@@ -17,12 +17,12 @@ export const MenuToggle = ({ toggle, isOpen }: MenuToggleProps) => (
     ></span>
     <span
       className={`h-[2px] w-[50%] transition-all duration-200 bg-black ${
-        isOpen ? "opacity-0" : "opacity-100"
+        isOpen ? "opacity-0 absolute bottom-1/2" : "opacity-100"
       }`}
     ></span>
     <span
       className={`h-[2px] w-[50%]  transition-all duration-200 bg-black ${
-        isOpen ? "rotate-45" : ""
+        isOpen ? "rotate-45 absolute bottom-1/2" : ""
       }`}
     ></span>
   </button>

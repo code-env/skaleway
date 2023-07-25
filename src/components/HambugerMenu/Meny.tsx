@@ -5,7 +5,7 @@ import { useRef } from "react";
 import { motion, useCycle } from "framer-motion";
 import { useDimensions } from "./dimensions";
 import { MenuToggle } from "./MenuToggle";
-import { Navigation } from "./Navigation";
+import { Navigation, routes } from "./Navigation";
 import "./meny.scss";
 
 const sidebar = {
@@ -30,7 +30,11 @@ const sidebar = {
   },
 };
 
-export const Example = () => {
+interface MenuProps {
+  routes: routes[];
+}
+
+export const MobileNav: React.FC<MenuProps> = ({ routes }) => {
   const [isOpen, toggleOpen] = useCycle(false, true);
   const containerRef = useRef(null);
   const { height } = useDimensions(containerRef);
@@ -41,14 +45,14 @@ export const Example = () => {
       animate={isOpen ? "open" : "closed"}
       custom={height}
       ref={containerRef}
-      className="w-[300px] fixed top-0 right-0 h-screen p-5"
+      className=" p-5"
     >
       <MenuToggle toggle={() => toggleOpen()} isOpen={isOpen} />
       <motion.div
         className="fixed top-0 right-0 h-screen w-[300px] bg-primary"
         variants={sidebar}
       />
-      <Navigation />
+      <Navigation routes={routes} />
     </motion.nav>
   );
 };
