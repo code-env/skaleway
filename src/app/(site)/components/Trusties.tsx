@@ -3,7 +3,7 @@
 import { useTruties } from "@/constants";
 import Image from "next/image";
 import React from "react";
-import Marquee from "./marquee";
+import Marquee from "react-fast-marquee";
 
 const Trusties = () => {
   const trusties = useTruties();
@@ -15,8 +15,8 @@ const Trusties = () => {
           They Trust Us
         </h1>
 
-        <marquee>
-          <div className="trusties-container flex w-full justify-between overflow-hidden">
+        <Marquee gradient pauseOnHover>
+          <div className="trusties-container flex w-full justify-between overflow-hidden gap-40 items-center pr-40">
             {trustiesRepeated.map((item, index) => (
               <div
                 key={index}
@@ -44,7 +44,7 @@ const Trusties = () => {
               </div>
             ))}
           </div>
-        </marquee>
+        </Marquee>
       </div>
       <style jsx>{`
         .trusties-container {
