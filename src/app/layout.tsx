@@ -48,10 +48,6 @@ export const metadata: Metadata = {
   },
 };
 
-// const calSans = LocalFont({
-//   src: "../public/fonts/CalSans-SemiBold.ttf",
-//   variable: "--font-calsans",
-// });
 interface RootLayoutProps {
   children: React.ReactNode;
 }
