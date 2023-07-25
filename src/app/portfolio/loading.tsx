@@ -1,7 +1,9 @@
-import React from "react";
+import { FC } from "react";
 
-const Loading = () => {
-  return <div>Loading</div>;
+interface loadingProps {}
+
+const loading: FC<loadingProps> = ({}) => {
+  return <div>loading</div>;
 };
 
-export default Loading;
+export default loading;
