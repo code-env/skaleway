@@ -58,15 +58,13 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <ClerkProvider>
-      <html lang="en">
-        <Toaster />
-        <body className="font-inter">
-          {/* <Header /> */}
-          {children}
-          <Footer />
-        </body>
-      </html>
-    </ClerkProvider>
+    <html lang="en">
+      <Toaster />
+      <body className="font-inter">
+        {/* <Header /> */}
+        {children}
+        <Footer />
+      </body>
+    </html>
   );
 }
