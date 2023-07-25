@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import NavItem from "./NavItem";
 import Logo from "../Logo";
 import { usePathname } from "next/navigation";
-import { Example } from "../HambugerMenu/Meny";
+import { MobileNav } from "../HambugerMenu/Meny";
 
 const Header = () => {
   const routes = useHeaderRoutes();
@@ -50,7 +50,7 @@ const Header = () => {
         </ul>
 
         <div className="relative max-[700px]:block hidden">
-          <Example />
+          <MobileNav routes={routes} />
         </div>
       </nav>
     </header>

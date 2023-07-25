@@ -13,33 +13,20 @@ const variants = {
 };
 
 export interface routes {
-  label: string;
-  icon: any;
+  label?: string;
+  icon?: any | undefined;
+  link?: string | undefined;
+  path?: string | undefined;
 }
-
-const routes = [
-  {
-    label: "UI/UX designs",
-    icon: UiAndUx,
-  },
-  {
-    label: "Graphic designs",
-    icon: Graphic,
-  },
-  {
-    label: "Web  Development",
-    icon: WebDev,
-  },
-];
 
 interface NavigationProps {
   routes: routes[];
 }
 
-export const Navigation = () => (
+export const Navigation: React.FC<NavigationProps> = ({ routes }) => (
   <motion.ul variants={variants} className="ul">
     {routes.map((route, i) => (
-      <MenuItem key={i} label={route.label} />
+      <MenuItem key={i} label={route.label!} />
     ))}
   </motion.ul>
 );
