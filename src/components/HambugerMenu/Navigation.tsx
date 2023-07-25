@@ -12,6 +12,11 @@ const variants = {
   },
 };
 
+export interface routes {
+  label: string;
+  icon: any;
+}
+
 const routes = [
   {
     label: "UI/UX designs",
@@ -26,6 +31,10 @@ const routes = [
     icon: WebDev,
   },
 ];
+
+interface NavigationProps {
+  routes: routes[];
+}
 
 export const Navigation = () => (
   <motion.ul variants={variants} className="ul">
