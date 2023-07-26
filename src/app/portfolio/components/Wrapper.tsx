@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Projects from "./Projects";
 import { Portfolio } from "@prisma/client";
+import axios from "axios";
 
 interface wrapperProps {
   isActive: boolean;
@@ -12,8 +13,9 @@ const Wrapper: React.FC<wrapperProps> = ({ isActive }) => {
   useEffect(() => {
     const fetchPortfolios = async () => {
       try {
-        const response = await fetch("/api/portfolio");
-        const data = await response.json();
+        const { data } = await axios.get(
+          "https://skaleway-admin.vercel.app/api/portfolio"
+        );
         setPortfolios(data);
       } catch (error) {
         console.log("Error fetching portfolios:", error);
@@ -22,6 +24,8 @@ const Wrapper: React.FC<wrapperProps> = ({ isActive }) => {
 
     fetchPortfolios();
   }, []);
+
+  console.log(portfolios);
 
   return (
     <div className="flex-1">
