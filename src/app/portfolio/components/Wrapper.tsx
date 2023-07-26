@@ -25,7 +25,7 @@ const Wrapper: React.FC<wrapperProps> = ({ isActive }) => {
     fetchPortfolios();
   }, []);
 
-  console.log(portfolios);
+  // console.log(portfolios);
 
   return (
     <div className="flex-1">
