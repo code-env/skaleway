@@ -33,7 +33,7 @@ export const useHeaderRoutes = () => {
     () => [
       {
         name: "Home",
-        path: "/",
+        link: "/",
       },
       {
         name: "About Us",
