@@ -5,6 +5,11 @@ interface DeviceSize {
   height: number;
 }
 
+export const getRandomColor = () => {
+  const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+  return `#${randomColor.padStart(6, "0")}`;
+};
+
 const WaterMark = () => {
   const [deviceSize, setDeviceSize] = useState<DeviceSize>({
     width: 0,
@@ -27,11 +32,6 @@ const WaterMark = () => {
   }, []);
 
   const numBoxes = Math.floor(deviceSize.height / 1.05 / 40);
-
-  const getRandomColor = () => {
-    const randomColor = Math.floor(Math.random() * 16777215).toString(16);
-    return `#${randomColor.padStart(6, "0")}`;
-  };
 
   const boxArray = Array.from({ length: numBoxes }).map((_, index) => (
     <div key={index} className="flex-grow gap-16 flex flex-col overflow-hidden">

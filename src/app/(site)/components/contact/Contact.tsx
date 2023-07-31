@@ -5,7 +5,7 @@ import Messaging from "./Messaging";
 const Contact = () => {
   return (
     <div className="responsive-px" id="contact">
-      <div className="w-full flex flex-col gap-4">
+      <div className="w-full flex flex-col gap-8 max-w-7xl mx-auto">
         <h1 className=" text-center gap-4 text-[32px] font-inter font-medium">
           Contact Us
         </h1>

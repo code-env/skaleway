@@ -1,5 +1,4 @@
 import { useFooterRoutes } from "@/constants";
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Logo from "./Logo";
@@ -16,7 +15,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-secondary h responsive-px text-white py-20 h-fit gap-10 flex flex-col z-50">
-      <div className="w-full flex gap-[100px] max-[700px]:flex-col">
+      <div className="w-full flex gap-[100px] max-[700px]:flex-col max-w-7xl mx-auto bg-red-500">
         <Logo />
         <div className="flex-1 flex justify-between max-[700px]:flex-col max-[700px]:gap-8">
           {footerRoutes.map((item, index) => (
@@ -42,10 +41,11 @@ const Footer = () => {
             <p className="font-bold text-2xl">Contact</p>
             <ul className="mx-7">
               <li className="font-sans font-normal text-white/80">
-                Mail: <a href="mailto:contact@skaleway.com">contact@skaleway.com</a> 
+                Mail:{" "}
+                <a href="mailto:contact@skaleway.com">contact@skaleway.com</a>
               </li>
               <li className="font-sans font-normal text-white/80 ">
-                Phone: <a href="tel:54584624">6 54 58 46 24</a> 
+                Phone: <a href="tel:54584624">6 54 58 46 24</a>
               </li>
             </ul>
           </div>

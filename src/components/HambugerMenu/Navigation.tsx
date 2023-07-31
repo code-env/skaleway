@@ -1,7 +1,6 @@
 import * as React from "react";
 import { motion } from "framer-motion";
 import { MenuItem } from "./MenuItem";
-import { Graphic, UiAndUx, WebDev } from "../../../public/Images/icons/ui";
 
 const variants = {
   open: {
@@ -13,7 +12,7 @@ const variants = {
 };
 
 export interface routes {
-  label?: string;
+  label?: string | undefined;
   icon?: any | undefined;
   link?: string | undefined;
   path?: string | undefined;
@@ -24,10 +23,15 @@ interface NavigationProps {
 }
 
 export const Navigation: React.FC<NavigationProps> = ({ routes }) => (
-  <motion.ul variants={variants} className="ul">
-    {routes.map((route, i) => (
-      <MenuItem key={i} label={route.label!} />
-    ))}
+  <motion.ul
+    variants={variants}
+    className="absolute top-20  bg-transparent w-[400px]"
+  >
+    {routes.map((route, i) => {
+      console.log(route);
+
+      return <MenuItem key={i} label={route?.label!} />;
+    })}
   </motion.ul>
 );
 

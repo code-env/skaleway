@@ -3,8 +3,8 @@ import Counter from "./Counter";
 
 const Analytics = () => {
   return (
-    <div className="responsive-px bg-secondary py-8 text-white">
-      <div className="w-full flex flex-col gap-4">
+    <div className="responsive-px bg-secondary py-10 text-white">
+      <div className="w-full flex flex-col gap-4 max-w-7xl mx-auto ">
         <h1 className="flex items-center gap-4 text-xl font-semibold">
           Our Analytics <span className="h-[2px] w-24 bg-primary"></span>
         </h1>
