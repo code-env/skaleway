@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Projects from "./Projects";
 import { Portfolio } from "@prisma/client";
 import axios from "axios";
+import { toast } from "sonner";
 // import Loading from "@/components/ui/Loading";
 
 interface wrapperProps {
@@ -23,6 +24,7 @@ const Wrapper: React.FC<wrapperProps> = ({ isActive }) => {
         setPortfolios(data);
       } catch (error) {
         setIsError(true);
+        toast.error("Something went wrong fetching post");
       } finally {
         setIsLoading(false);
       }
