@@ -6,7 +6,7 @@ import { motion, useCycle } from "framer-motion";
 import { useDimensions } from "./dimensions";
 import { MenuToggle } from "./MenuToggle";
 import { Navigation, routes } from "./Navigation";
-import "./mobileNav.scss";
+import "@/styles/mobileNav.scss";
 
 const sidebar = {
   open: (height = 1000) => ({

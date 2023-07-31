@@ -2,7 +2,7 @@
 
 import React from "react";
 import Form from "./Form";
-import Input from "@/components/Input";
+import Input from "@/components/ui/Input";
 import { useState } from "react";
 
 type UserData = {

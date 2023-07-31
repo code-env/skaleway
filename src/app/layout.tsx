@@ -1,4 +1,4 @@
-import "./globals.css";
+import "@/styles/globals.css";
 import Footer from "@/components/footer/Footer";
 import { ClerkProvider } from "@clerk/nextjs";
 import { Toaster } from "sonner";

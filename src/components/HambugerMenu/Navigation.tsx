@@ -28,8 +28,6 @@ export const Navigation: React.FC<NavigationProps> = ({ routes }) => (
     className="absolute top-20  bg-transparent w-[400px]"
   >
     {routes.map((route, i) => {
-      console.log(route);
-
       return <MenuItem key={i} label={route?.label!} />;
     })}
   </motion.ul>
