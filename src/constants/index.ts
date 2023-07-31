@@ -32,7 +32,7 @@ export const useHeaderRoutes = () => {
   const routes = useMemo(
     () => [
       {
-        name: "Home",
+        label: "Home",
         link: "/",
       },
       {
