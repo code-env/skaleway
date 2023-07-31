@@ -449,7 +449,7 @@ export const useDevelpers = () => {
               {
                 name: "Instagram",
                 link: "https://www.instagram.com/royal_designs56?r=nametag",
-                icon: BsTwitter,
+                icon: BsInstagram,
               },
               {
                 name: "facebook",
