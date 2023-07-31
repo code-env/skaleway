@@ -32,8 +32,8 @@ export const useHeaderRoutes = () => {
   const routes = useMemo(
     () => [
       {
-        label: "Home",
-        path: "/",
+        name: "Home",
+        link: "/",
       },
       {
         label: "About Us",
