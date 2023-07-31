@@ -1,9 +1,8 @@
-import "./globals.css";
-import Footer from "@/components/Footer";
-import { ClerkProvider } from "@clerk/nextjs";
-import { Toaster } from "sonner";
+import "@/styles/globals.css";
+import Footer from "@/components/footer/Footer";
 
 import { Metadata } from "next";
+import { Toaster } from "@/providers/Provider";
 
 export const metadata: Metadata = {
   title: {

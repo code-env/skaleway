@@ -8,7 +8,7 @@ const Tools = () => {
   const tools = useDevTools();
   return (
     <div className="responsive-px w-full">
-      <div className="flex flex-col gap-7">
+      <div className="flex flex-col gap-7 max-w-7xl mx-auto">
         <div className="flex w-full  gap-8 max-[700px]:flex-col-reverse">
           <div className="flex-1 flex flex-col gap-8">
             <h1 className="flex items-center gap-4 text-xl font-semibold">

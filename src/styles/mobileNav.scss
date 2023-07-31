@@ -10,35 +10,23 @@
 .button {
   outline: none;
   border: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   cursor: pointer;
-  position: absolute;
-  top: 10px;
-  right: 40px;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
+  width: 50px;
+  height: 50px;
   z-index: 50;
   display: flex;
-  background-color: white !important;
   align-items: center;
   justify-content: center;
-  background: transparent;
+
+  span {
+    background: white;
+  }
 }
 
 .ul,
 .li {
   margin: 0;
   padding: 0;
-}
-
-.ul {
-  padding: 25px;
-  position: absolute;
-  top: 100px;
-  width: 230px;
 }
 
 .li {

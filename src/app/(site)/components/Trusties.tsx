@@ -10,7 +10,7 @@ const Trusties = () => {
   const trustiesRepeated = [...trusties]; // repeat the items three times
   return (
     <div className="responsive-px">
-      <div className="flex w-full flex-col gap-7">
+      <div className="flex w-full flex-col gap-7 max-w-7xl mx-auto">
         <h1 className="font-sans text-[32px] text-secondary text-center">
           They Trust Us
         </h1>

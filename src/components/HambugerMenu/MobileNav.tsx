@@ -6,7 +6,7 @@ import { motion, useCycle } from "framer-motion";
 import { useDimensions } from "./dimensions";
 import { MenuToggle } from "./MenuToggle";
 import { Navigation, routes } from "./Navigation";
-import "./meny.scss";
+import "@/styles/mobileNav.scss";
 
 const sidebar = {
   open: (height = 1000) => ({
@@ -45,11 +45,11 @@ export const MobileNav: React.FC<MenuProps> = ({ routes }) => {
       animate={isOpen ? "open" : "closed"}
       custom={height}
       ref={containerRef}
-      className=" p-5"
+      className="fixed  top-0 right-0 h-20 w-28 flex items-center justify-center"
     >
       <MenuToggle toggle={() => toggleOpen()} isOpen={isOpen} />
       <motion.div
-        className="fixed top-0 right-0 h-screen w-[300px] bg-primary"
+        className="fixed top-0 right-0 h-screen w-[300px] bg-primary pointer-events-none"
         variants={sidebar}
       />
       <Navigation routes={routes} />

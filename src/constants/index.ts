@@ -36,23 +36,23 @@ export const useHeaderRoutes = () => {
         link: "/",
       },
       {
-        name: "About Us",
+        label: "About Us",
         path: "about",
       },
       {
-        name: "Porfolio",
+        label: "Porfolio",
         link: "/portfolio",
       },
       {
-        name: "Services",
+        label: "Services",
         path: "services",
       },
       {
-        name: "Team",
+        label: "Team",
         path: "team",
       },
       {
-        name: "Contact Us",
+        label: "Contact Us",
         path: "contact",
       },
     ],
@@ -185,6 +185,35 @@ export const useDevTools = () => {
   const tools = useMemo(
     () => [
       {
+        name: "Design",
+        elmts: [
+          {
+            name: "figma",
+            icon: figma,
+            width: 59,
+            height: 89,
+          },
+          {
+            name: "photoshop",
+            icon: photoshop,
+            width: 80,
+            height: 80,
+          },
+          {
+            name: "indesign",
+            icon: indesign,
+            width: 80,
+            height: 80,
+          },
+          {
+            name: "illustrator",
+            icon: illustrator,
+            width: 80,
+            height: 80,
+          },
+        ],
+      },
+      {
         name: "Development",
         elmts: [
           {
@@ -238,35 +267,6 @@ export const useDevTools = () => {
           {
             name: "nodejs",
             icon: nodejs,
-            width: 80,
-            height: 80,
-          },
-        ],
-      },
-      {
-        name: "Design",
-        elmts: [
-          {
-            name: "figma",
-            icon: figma,
-            width: 59,
-            height: 89,
-          },
-          {
-            name: "photoshop",
-            icon: photoshop,
-            width: 80,
-            height: 80,
-          },
-          {
-            name: "indesign",
-            icon: indesign,
-            width: 80,
-            height: 80,
-          },
-          {
-            name: "illustrator",
-            icon: illustrator,
             width: 80,
             height: 80,
           },
@@ -449,7 +449,7 @@ export const useDevelpers = () => {
               {
                 name: "Instagram",
                 link: "https://www.instagram.com/royal_designs56?r=nametag",
-                icon: BsTwitter,
+                icon: BsInstagram,
               },
               {
                 name: "facebook",

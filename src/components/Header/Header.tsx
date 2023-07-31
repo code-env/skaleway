@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import NavItem from "./NavItem";
 import Logo from "../Logo";
 import { usePathname } from "next/navigation";
-import { MobileNav } from "../HambugerMenu/Meny";
+import { MobileNav } from "../HambugerMenu/MobileNav";
 
 const Header = () => {
   const routes = useHeaderRoutes();
@@ -34,13 +34,13 @@ const Header = () => {
       } responsive-px font-inter h-20 fixed top-0 left-0
     w-full  text-white z-50`}
     >
-      <nav className=" w-full h-full items-center flex lg:gap-72 justify-between">
+      <nav className=" w-full h-full items-center flex lg:gap-72 justify-between max-w-7xl mx-auto">
         <Logo />
 
         <ul className="hidden lg:flex gap-14">
           {routes.map((route, index) => (
             <NavItem
-              label={route.name}
+              label={route.label}
               href={route.path}
               key={index}
               index={index}

@@ -15,8 +15,8 @@ const Project: React.FC<projectProps> = ({ project }) => {
         src={project.imageUrl}
         alt={project.description}
         height={400}
-        width={200}
-        className="w-full h-fit"
+        width={1000}
+        className="object-cover"
       />
     </div>
   );
