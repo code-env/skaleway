@@ -33,7 +33,7 @@ const Wrapper: React.FC<wrapperProps> = ({ isActive }) => {
     fetchPortfolios();
   }, []);
 
-  if (isLoading || !isError || isError) {
+  if (isLoading || isError) {
     return (
       <div className="w-full flex-wrap h-fit gap-4 flex duration-500 transition-all max-w-7xl mx-auto">
         {Array.from({ length: 6 }).map((_, index) => (

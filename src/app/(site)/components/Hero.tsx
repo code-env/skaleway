@@ -12,7 +12,7 @@ const Hero = () => {
       className="bg-gradient h-screen max-[700px]:h-fit max-[700px]:pb-56 relative responsive-px pt-28  overflow-hidden"
       id="home"
     >
-      <div className="w-full text-white flex flex-col gap-5 2xl:gap-10">
+      <div className="w-full text-white flex flex-col gap-5 2xl:gap-10 max-w-7xl mx-auto">
         <h1 className="font-sans font-bold lg:text-5xl text-xl lg:leading-[140%] 2xl:leading-[140%] min-[600px]:text-4xl 2xl:text-7xl antialiased">
           We Design and Develop the <br className="lg:block hidden" /> Digital
           Solutions to Grow <br className="lg:block hidden" /> your{" "}
