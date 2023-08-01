@@ -3,13 +3,13 @@ import Projects from "./Projects";
 import { Portfolio } from "@prisma/client";
 import axios from "axios";
 import { toast } from "sonner";
-// import Loading from "@/components/ui/Loading";
 
 interface wrapperProps {
   isActive: boolean;
+  category: string;
 }
 
-const Wrapper: React.FC<wrapperProps> = ({ isActive }) => {
+const Wrapper: React.FC<wrapperProps> = ({ isActive, category }) => {
   const [portfolios, setPortfolios] = useState<Portfolio[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [isError, setIsError] = useState<boolean>(false);

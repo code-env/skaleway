@@ -44,19 +44,20 @@ const Hero = () => {
         >
           Get to know us
         </a>
+
+        <div className="image absolute bottom-9">
+          <p className="text-base text-white">
+            5 Happy Clients{" "}
+            <span className="text-white/50 flex items-center gap-2">
+              <span className=" flex items-center text-xs">
+                <AiFillStar className="text-[#F9B83F]" size={20} /> 4.9
+              </span>
+              <span className="text-white text-sm">(1k Reviews)</span>
+            </span>
+          </p>
+        </div>
       </div>
       <WaterMark />
-      <div className="image absolute bottom-9">
-        <p className="text-base text-white">
-          5 Happy Clients{" "}
-          <span className="text-white/50 flex items-center gap-2">
-            <span className=" flex items-center text-xs">
-              <AiFillStar className="text-[#F9B83F]" size={20} /> 4.9
-            </span>
-            <span className="text-white text-sm">(1k Reviews)</span>
-          </span>
-        </p>
-      </div>
     </div>
   );
 };
