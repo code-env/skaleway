@@ -5,7 +5,7 @@ interface sidebarProps {
   isActive: boolean;
   setIsActive: (e: boolean) => void;
   setCategory: (e: string) => void;
-  category: string;
+  category?: string;
 }
 
 const Sidebar: React.FC<sidebarProps> = ({
