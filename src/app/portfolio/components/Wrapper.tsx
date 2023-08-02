@@ -33,6 +33,20 @@ const Wrapper: React.FC<wrapperProps> = ({ isActive, category }) => {
     fetchPortfolios();
   }, []);
 
+  useEffect(() => {
+    if (category === "") return;
+
+    console.log("Original portfolios:", portfolios);
+
+    const filteredPortfolios = portfolios.filter(
+      (p) => p.variant == category.toString()
+    );
+
+    console.log("Filtered portfolios:", filteredPortfolios);
+
+    setPortfolios(filteredPortfolios);
+  }, [category]);
+
   if (isLoading || isError) {
     return (
       <div className="w-full flex-wrap h-fit gap-4 flex duration-500 transition-all max-w-7xl mx-auto">
