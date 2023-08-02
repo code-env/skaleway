@@ -7,9 +7,10 @@ import { toast } from "sonner";
 
 interface wrapperProps {
   isActive: boolean;
+  category: string;
 }
 
-const Wrapper: React.FC<wrapperProps> = ({ isActive }) => {
+const Wrapper: React.FC<wrapperProps> = ({ isActive, category }) => {
   const [portfolios, setPortfolios] = useState<Portfolio[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [isError, setIsError] = useState<boolean>(false);
@@ -32,6 +33,20 @@ const Wrapper: React.FC<wrapperProps> = ({ isActive }) => {
 
     fetchPortfolios();
   }, []);
+
+  useEffect(() => {
+    if (category === "") return;
+
+    console.log("Original portfolios:", portfolios);
+
+    const filteredPortfolios = portfolios.filter(
+      (p) => p.variant == category.toString()
+    );
+
+    console.log("Filtered portfolios:", filteredPortfolios);
+
+    setPortfolios(filteredPortfolios);
+  }, [category]);
 
   if (isLoading || isError) {
     return (

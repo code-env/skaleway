@@ -13,7 +13,7 @@ const Hero = () => {
       id="home"
     >
       <div className="w-full text-white flex flex-col gap-5 2xl:gap-10 max-w-7xl mx-auto">
-        <h1 className="font-sans font-bold lg:text-5xl text-xl lg:leading-[140%] 2xl:leading-[140%] min-[600px]:text-4xl 2xl:text-7xl antialiased">
+        <h1 className="font-sans font-bold lg:text-5xl text-xl lg:leading-[140%] 2xl:leading-[140%] min-[600px]:text-5xl 2xl:text-7xl antialiased">
           We Design and Develop the <br className="lg:block hidden" /> Digital
           Solutions to Grow <br className="lg:block hidden" /> your{" "}
           <span className="text-primary">
@@ -44,19 +44,19 @@ const Hero = () => {
         >
           Get to know us
         </a>
+        <div className="image absolute bottom-9">
+          <p className="text-base text-white">
+            5 Happy Clients{" "}
+            <span className="text-white/50 flex items-center gap-2">
+              <span className=" flex items-center text-xs">
+                <AiFillStar className="text-[#F9B83F]" size={20} /> 4.9
+              </span>
+              <span className="text-white text-sm">(1k Reviews)</span>
+            </span>
+          </p>
+        </div>
       </div>
       <WaterMark />
-      <div className="image absolute bottom-9">
-        <p className="text-base text-white">
-          5 Happy Clients{" "}
-          <span className="text-white/50 flex items-center gap-2">
-            <span className=" flex items-center text-xs">
-              <AiFillStar className="text-[#F9B83F]" size={20} /> 4.9
-            </span>
-            <span className="text-white text-sm">(1k Reviews)</span>
-          </span>
-        </p>
-      </div>
     </div>
   );
 };
