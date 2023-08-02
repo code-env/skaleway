@@ -8,6 +8,7 @@ export const metadata: Metadata = {
 
 const PortfolioPage = () => {
   return <ClientPortfolio />;
+
 };
 
 export default PortfolioPage;

@@ -3,7 +3,6 @@ import Projects from "./Projects";
 import { Portfolio } from "@prisma/client";
 import axios from "axios";
 import { toast } from "sonner";
-// import Loading from "@/components/ui/Loading";
 
 interface wrapperProps {
   isActive: boolean;
