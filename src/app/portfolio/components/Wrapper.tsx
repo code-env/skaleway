@@ -45,7 +45,7 @@ const Wrapper: React.FC<wrapperProps> = ({ isActive, category }) => {
     console.log("Filtered portfolios:", filteredPortfolios);
 
     setPortfolios(filteredPortfolios);
-  }, [category]);
+  }, [category, portfolios]);
 
   if (isLoading || isError) {
     return (
