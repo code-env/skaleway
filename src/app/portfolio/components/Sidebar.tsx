@@ -3,6 +3,7 @@ import { Graphic, UiAndUx, WebDev } from "../../../../public/Images/icons/ui";
 import clsx from "clsx";
 
 import "@/styles/mobilesidebar.scss";
+import { useOutsideClick } from "@/lib/useClickOutside";
 
 interface sidebarProps {
   isActive: boolean;
@@ -17,6 +18,9 @@ const Sidebar: React.FC<sidebarProps> = ({
   setCategory,
   category,
 }) => {
+  const ref = useOutsideClick(() => {
+    setIsActive(false);
+  });
   const [isOpen, setIsopen] = useState<boolean>(false);
   const routes = [
     {
@@ -42,6 +46,7 @@ const Sidebar: React.FC<sidebarProps> = ({
         // onMouseEnter={() => setIsActive(true)}
         // onMouseLeave={() => setIsActive(false)}
         onClick={() => setIsActive(!isActive)}
+        ref={ref}
       >
         <div className="wrapper w-full h-[90%]  bg-slate-500 rounded-2xl overflow-hidden">
           <ul

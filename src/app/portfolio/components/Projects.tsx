@@ -22,7 +22,7 @@ const Projects: React.FC<projectsProp> = ({ isActive, portfolio }) => {
   };
 
   useEffect(() => {
-    console.log(selected);
+    // console.log(selected);
   }, [selected]);
 
   return (
