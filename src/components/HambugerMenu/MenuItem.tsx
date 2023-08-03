@@ -1,6 +1,8 @@
 import * as React from "react";
 import { motion } from "framer-motion";
-import { IconType } from "react-icons";
+// import { IconType } from "react-icons";
+import Link from "next/link";
+import { routes } from "./Navigation";
 
 const variants = {
   open: {
@@ -20,11 +22,12 @@ const variants = {
 };
 
 interface MenuItemProps {
-  label: string;
-  icon?: IconType;
+  route: routes;
 }
 
-export const MenuItem: React.FC<MenuItemProps> = ({ label, icon: Icon }) => {
+export const MenuItem: React.FC<MenuItemProps> = ({
+  route: { label, link },
+}) => {
   return (
     <motion.li
       variants={variants}
@@ -32,7 +35,7 @@ export const MenuItem: React.FC<MenuItemProps> = ({ label, icon: Icon }) => {
       whileTap={{ scale: 0.95 }}
       className="li"
     >
-      <span>{label}</span>
+      {link ? <Link href={link}>{label}</Link> : <span>{label}</span>}
     </motion.li>
   );
 };
