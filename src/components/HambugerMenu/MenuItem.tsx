@@ -1,6 +1,5 @@
 import * as React from "react";
 import { motion } from "framer-motion";
-// import { IconType } from "react-icons";
 import Link from "next/link";
 import { routes } from "./Navigation";
 
