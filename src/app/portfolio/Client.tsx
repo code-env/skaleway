@@ -9,7 +9,7 @@ const ClientPortfolio = () => {
   const [isActive, setIsActive] = useState<boolean>(false);
   const [category, setCategory] = useState<string>("");
 
-  console.log(category);
+  // console.log(category);
 
   return (
     <div className="min-h-screen flex">
