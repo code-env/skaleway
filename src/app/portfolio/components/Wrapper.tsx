@@ -33,19 +33,19 @@ const Wrapper: React.FC<wrapperProps> = ({ isActive, category }) => {
     fetchPortfolios();
   }, []);
 
-  useEffect(() => {
-    if (category === "") return;
+  // useEffect(() => {
+  //   if (category === "") return;
 
-    console.log("Original portfolios:", portfolios);
+  //   console.log("Original portfolios:", portfolios);
 
-    const filteredPortfolios = portfolios.filter(
-      (p) => p.variant == category.toString()
-    );
+  //   const filteredPortfolios = portfolios.filter(
+  //     (p) => p.variant == category.toString()
+  //   );
 
-    console.log("Filtered portfolios:", filteredPortfolios);
+  //   console.log("Filtered portfolios:", filteredPortfolios);
 
-    setPortfolios(filteredPortfolios);
-  }, [category, portfolios]);
+  //   setPortfolios(filteredPortfolios);
+  // }, [category, portfolios]);
 
   if (isLoading || isError) {
     return (

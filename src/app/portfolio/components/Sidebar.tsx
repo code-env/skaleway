@@ -1,5 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { Graphic, UiAndUx, WebDev } from "../../../../public/Images/icons/ui";
+import clsx from "clsx";
+
+import "@/styles/mobilesidebar.scss"
 
 interface sidebarProps {
   isActive: boolean;
@@ -14,6 +17,8 @@ const Sidebar: React.FC<sidebarProps> = ({
   setCategory,
   category,
 }) => {
+
+  const [isOpen, setIsopen] = useState<boolean>(false)
   const routes = [
     {
       label: "UI/UX designs",
@@ -30,6 +35,8 @@ const Sidebar: React.FC<sidebarProps> = ({
   ];
 
   return (
+    <>
+
     <div
       className={`sidebar z-10 sticky top-20 left-10 flex items-center  w-14 transition-all duration-300 ${
         isActive && "w-72"
@@ -66,6 +73,8 @@ const Sidebar: React.FC<sidebarProps> = ({
         </ul>
       </div>
     </div>
+  <div onClick={()=> setIsopen((prev) => !prev)} className={clsx("w-14 md:hidden mobilesidebar cursor-pointer duration-300 transition-all bg-gradientr", isOpen && "w-72")}></div>
+    </>
   );
 };
 
