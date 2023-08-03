@@ -53,7 +53,7 @@ const Projects: React.FC<projectsProp> = ({ isActive, portfolio }) => {
         >
           <XSquare />
         </div>
-        <div className="w-1/2 border h-fit relative">
+        <div className="w-4/5 md:w-1/2 border h-fit relative ">
           <Image
             height={400}
             width={1000}
