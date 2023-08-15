@@ -49,9 +49,9 @@ const Hero = () => {
             5 Happy Clients{" "}
             <span className="text-white/50 flex items-center gap-2">
               <span className=" flex items-center text-xs">
-                <AiFillStar className="text-[#F9B83F]" size={20} /> 4.9
+                <AiFillStar className="text-[#F9B83F]" size={20} /> 1.9
               </span>
-              <span className="text-white text-sm">(1k Reviews)</span>
+              <span className="text-white text-sm">(20+ Reviews)</span>
             </span>
           </p>
         </div>
