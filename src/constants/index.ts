@@ -285,7 +285,7 @@ export const useContactCards = () => {
       {
         name: "Drop a Line",
         icon: CiMail,
-        ln1: "contact@skaleway.com",
+        ln1: "skalewayteam@gmail.com",
         ln2: "supporteam@skaleway.com",
       },
       {

@@ -12,7 +12,7 @@ const Analytics = () => {
         <div className="flex justify-between  flex-wrap max-[700px]">
           <div className="flex flex-col gap-4 items-center flex-1 max-[700px]:gap-1 max-[700px]:items-start max-[700px]:w-fit ">
             <p>
-              <Counter duration={10} end={20} start={0} />{" "}
+              <Counter duration={10} end={10} start={0} />{" "}
               <span className="text-2xl max-[700px]:text-sm">+</span>
             </p>
             <p className="font-semibold text-2xl font-sans max-[700px]:text-sm">
@@ -21,14 +21,14 @@ const Analytics = () => {
           </div>
           <div className="h-14 w-[2px] bg-primary max-[700px]:hidden" />
           <div className="flex flex-col gap-4 items-center flex-1 max-[700px]:gap-1 max-[700px]:items-start max-[700px]:w-fit ">
-            <Counter duration={10} end={1000} start={0} />
+            <Counter duration={10} end={20} start={0} />
             <p className="font-semibold text-2xl font-sans max-[700px]:text-sm">
               Website Ranking
             </p>
           </div>
           <div className="h-14 w-[2px] bg-primary max-[700px]:hidden" />
           <div className="flex flex-col gap-4 items-center flex-1 max-[700px]:gap-1 max-[700px]:items-start ">
-            <Counter duration={10} end={500} start={0} />
+            <Counter duration={10} end={50} start={0} />
             <p className="font-semibold text-2xl font-sans max-[700px]:text-sm">
               Business Growth
             </p>
