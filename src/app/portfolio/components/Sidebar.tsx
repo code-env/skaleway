@@ -48,7 +48,7 @@ const Sidebar: React.FC<sidebarProps> = ({
         onClick={() => setIsActive(!isActive)}
         ref={ref}
       >
-        <div className="wrapper w-full h-[90%]  bg-slate-500 rounded-2xl overflow-hidden">
+        <div className="wrapper w-full h-[90%]  bg-slate-500 rounded-2xl overflow-hidden max-sm:hidden">
           <ul
             className={`overflow-hidden w-full flex flex-col  pt-10 gap-8 h-full bg-secondary  text-white`}
           >
